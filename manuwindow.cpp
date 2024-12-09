@@ -55,7 +55,7 @@ void ManuWindow::on_nextBtn_clicked()
     }
 
 
-    QMessageBox::warning(this, "Input Missing", ui->firstInput->text()+" and "+ui->secondInput->text());
+    QMessageBox::information(this, "Finally...", ui->firstInput->text()+" and "+ui->secondInput->text());
 
     // if (ui->susGameChoice->isChecked()) {
 
