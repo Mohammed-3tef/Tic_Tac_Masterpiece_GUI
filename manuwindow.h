@@ -18,6 +18,15 @@ public:
     explicit ManuWindow(QWidget *parent = nullptr);
     ~ManuWindow();
 
+private slots:
+    void on_manuBackBtn_clicked();
+
+    void on_onePlayerChoice_clicked();
+
+    void on_nextBtn_clicked();
+
+    void on_twoPlayerChoice_clicked();
+
 private:
     Ui::ManuWindow *ui;
 };
