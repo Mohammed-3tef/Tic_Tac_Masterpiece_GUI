@@ -6,6 +6,7 @@
 #include "ui_helpwindow.h"
 #include "ui_creditswindow.h"
 #include "manuwindow.h"
+#include <QIcon>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

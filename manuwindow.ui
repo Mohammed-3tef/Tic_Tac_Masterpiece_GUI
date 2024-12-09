@@ -7,11 +7,15 @@
     <x>0</x>
     <y>0</y>
     <width>1487</width>
-    <height>631</height>
+    <height>645</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Tic Tac Masterpiece</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/Img/tic-tac-toe-icon.ico</normaloff>:/Img/tic-tac-toe-icon.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -120,8 +124,8 @@ QPushButton:hover {
       </property>
      </widget>
     </item>
-    <item row="4" column="0" alignment="">
-     <widget class="QFrame" name="">
+    <item row="4" column="0">
+     <widget class="QFrame" name="frame">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -509,6 +513,8 @@ QPushButton:hover {
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

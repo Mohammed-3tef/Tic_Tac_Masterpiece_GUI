@@ -13,21 +13,27 @@ SOURCES += \
     helpwindow.cpp \
     main.cpp \
     mainwindow.cpp \
-    manuwindow.cpp
+    manuwindow.cpp \
+    ulimateGame.cpp
 
 HEADERS += \
     creditswindow.h \
     helpwindow.h \
     mainwindow.h \
-    manuwindow.h
+    manuwindow.h \
+    ultimateGame.h
 
 FORMS += \
     creditswindow.ui \
     helpwindow.ui \
     mainwindow.ui \
-    manuwindow.ui
+    manuwindow.ui \
+    ulimateGame.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc

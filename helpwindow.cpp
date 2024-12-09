@@ -1,5 +1,6 @@
 #include "helpwindow.h"
 #include "ui_helpwindow.h"
+#include <QIcon>
 
 HelpWindow::HelpWindow(QWidget *parent)
     : QMainWindow(parent)

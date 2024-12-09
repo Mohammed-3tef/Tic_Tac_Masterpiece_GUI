@@ -1,10 +1,14 @@
 #include "manuwindow.h"
+#include "ultimateGame.h"
 #include "ui_manuwindow.h"
+#include "ui_ulimateGame.h"
 #include "QMessageBox"
+#include <QIcon>
 
 ManuWindow::ManuWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::ManuWindow)
+    , ullimateGame(nullptr)
 {
     ui->setupUi(this);
     ui->onePlayerChoice->setChecked(false);
@@ -61,9 +65,10 @@ void ManuWindow::on_nextBtn_clicked()
 
     // }
 
-    // else if (ui->ultimateGameChoice->isChecked()) {
-
-    // }
+    if (ui->ultimateGameChoice->isChecked()) {
+        ullimateGame = new ultimateTicTacToe(this); // Pass MainWindow as parent
+        ullimateGame->show();
+    }
 }
 
 

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons"/>
+    <qresource prefix="/">
+        <file>Img/tic-tac-toe-icon.ico</file>
+    </qresource>
+</RCC>

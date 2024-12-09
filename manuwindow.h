@@ -2,6 +2,7 @@
 #define MANUWINDOW_H
 
 #include <QMainWindow>
+#include "ultimateGame.h"
 
 namespace Ui {
 class ManuWindow;
@@ -29,6 +30,7 @@ private slots:
 
 private:
     Ui::ManuWindow *ui;
+    ultimateTicTacToe *ullimateGame;
 };
 
 #endif // MANUWINDOW_H

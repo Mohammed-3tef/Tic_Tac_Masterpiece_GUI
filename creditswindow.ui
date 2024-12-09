@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Credits</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/Img/tic-tac-toe-icon.ico</normaloff>:/Img/tic-tac-toe-icon.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
@@ -137,6 +141,8 @@ QPushButton:hover {
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

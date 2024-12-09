@@ -4,6 +4,7 @@
 #include "ui_mainwindow.h"
 #include "ui_helpwindow.h"
 #include "ui_creditswindow.h"
+#include <QIcon>
 
 CreditsWindow::CreditsWindow(QWidget *parent)
     : QMainWindow(parent)
