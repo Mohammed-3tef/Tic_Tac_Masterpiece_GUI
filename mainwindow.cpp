@@ -57,7 +57,6 @@ void MainWindow::on_creditsBtn_clicked()
 
 void MainWindow::on_startBtn_clicked()
 {
-    this->hide();
     manuWindow = new ManuWindow(this); // Pass MainWindow as parent
     connect(manuWindow, &ManuWindow::backToMainWindow, this, &MainWindow::showMainWindow);
     manuWindow->showFullScreen();
