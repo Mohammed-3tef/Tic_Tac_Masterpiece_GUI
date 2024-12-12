@@ -1,238 +1,131 @@
-
-
-//--------------------------------------- HEADERS
-
-#include <bits/stdc++.h>
+#include <QApplication>
+#include <QWidget>
+#include <QGridLayout>
+#include <QPushButton>
+#include <QMessageBox>
 #include "BoardGame_Classes.h"
-using namespace std;
-
-//--------------------------------------- HELPER FUNCTIONS
-
-void checkPlayerType(string &playerType, int num) {
-    cout << "\nWhat is player " << num << " type ?\n[1] Human.\n[2] Computer.\nChoice:";
-    getline(cin, playerType);
-    while (true) {
-        if (playerType != "1" && playerType != "2") {
-            cout << "Please enter a valid choice!\n\n";
-            cout << "What is player " << num << " type ?\n[1] Human.\n[2] Computer.\nChoice:";
-            getline(cin, playerType);
-            continue;
-        }
-        return;
-    }
-}
 
 //--------------------------------------- CLASSES
-//---------------- BIG BOARD
 
-class Ultimate_Tic_Tac_Toe_Board : public Board<char> {
+// Qt-based Ultimate Tic-Tac-Toe board
+class UltimateTicTacToeWidget : public QWidget {
+    Q_OBJECT
+
 private:
-    bool over = false;
-    Board<char> *smallBoards[3][3]; // 3x3 grid of smaller boards
-    char bigBoard[3][3]; // To track who won each smaller board
-public:
-    Ultimate_Tic_Tac_Toe_Board();
-    bool update_board(int x, int y, char symbol) override;
-    void display_board() override;
-    bool is_win() override;
-    bool is_draw() override;
-    bool game_is_over() override;
-};
-
-//---------------- SMALL BOARD
-
-class TicTacToeBoard : public Board<char> {
-private:
-    vector<vector<char>> board; // Define your own board
-public:
-    TicTacToeBoard();
-    void display_board() override;
-    bool update_board(int x, int y, char symbol) override;
-    bool is_win() override;
-    bool is_draw() override;
-    bool game_is_over() override;
-    char get_cell(int x, int y) const ;     // Getter for board cell
-    void set_cell(int x, int y, char value);        // Setter for board cell
-};
-
-class Ultimate_Tic_Tac_Toe_Player : public Player<char> {
+    QPushButton* smallBoards[3][3][3][3]; // Buttons for the 3x3 grid of smaller boards
     char bigBoard[3][3];
-public:
-    Ultimate_Tic_Tac_Toe_Player(string name, char symbol);
-    void getmove(int &x, int &y) override;
-};
+    char currentPlayer;
 
-class Ultimate_Tic_Tac_Toe_Random_Player : public RandomPlayer<char> {
 public:
-    Ultimate_Tic_Tac_Toe_Random_Player(char symbol);
-    void getmove(int &x, int &y) override;
+    UltimateTicTacToeWidget(QWidget* parent = nullptr);
+
+private slots:
+            void handleCellClick();
+
+private:
+    void updateSmallBoard(int bigX, int bigY, int cellX, int cellY, char symbol);
+    bool checkWin(const char board[3][3]);
+    bool checkDraw(const char board[3][3]);
+    void switchPlayer();
 };
 
 //--------------------------------------- IMPLEMENTATION
-//---------------------------- BOARD CLASS
-//---------------- SMALL BOARD
 
-TicTacToeBoard::TicTacToeBoard() {
-    // Initialize a 3x3 board
-    board.resize(3, vector<char>(3, 0));
-}
+UltimateTicTacToeWidget::UltimateTicTacToeWidget(QWidget* parent)
+        : QWidget(parent), currentPlayer('X') {
+    QGridLayout* mainLayout = new QGridLayout(this);
 
-void TicTacToeBoard::display_board() {
-    for (auto &row: board) {
-        for (auto &cell: row) {
-            cout << (cell == 0 ? '.' : cell) << " ";
-        }
-        cout << endl;
-    }
-}
-
-bool TicTacToeBoard::update_board(int x, int y, char symbol) {
-    if (board[x][y] == 0) {
-        board[x][y] = symbol;
-        return true;
-    }
-    return false;
-}
-
-bool TicTacToeBoard::is_win() {
-    // Check rows, columns, and diagonals for a win
     for (int i = 0; i < 3; ++i) {
-        if (board[i][0] != 0 && board[i][0] == board[i][1] && board[i][1] == board[i][2]) return true;
-        if (board[0][i] != 0 && board[0][i] == board[1][i] && board[1][i] == board[2][i]) return true;
-    }
-    if (board[0][0] != 0 && board[0][0] == board[1][1] && board[1][1] == board[2][2]) return true;
-    if (board[0][2] != 0 && board[0][2] == board[1][1] && board[1][1] == board[2][0]) return true;
-    return false;
-}
+        for (int j = 0; j < 3; ++j) {
+            QGridLayout* smallBoardLayout = new QGridLayout();
+            for (int x = 0; x < 3; ++x) {
+                for (int y = 0; y < 3; ++y) {
+                    QPushButton* cell = new QPushButton(".", this);
+                    smallBoards[i][j][x][y] = cell;
+                    smallBoardLayout->addWidget(cell, x, y);
 
-bool TicTacToeBoard::is_draw() {
-    for (auto &row: board) {
-        for (auto &cell: row) {
-            if (cell == 0) return false; // Empty cell found
-        }
-    }
-    return !is_win(); // Draw if no win and board is full
-}
-
-bool TicTacToeBoard::game_is_over() {
-    return is_win() || is_draw();
-}
-
-void TicTacToeBoard::set_cell(int x, int y, char value) {
-    board[x][y] = value;
-}
-
-char TicTacToeBoard::get_cell(int x, int y) const {
-    return board[x][y];
-}
-
-//---------------- BIG BOARD
-
-// Constructor for X_O_Board
-Ultimate_Tic_Tac_Toe_Board::Ultimate_Tic_Tac_Toe_Board() { //the constructor here is where we initialize the board
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            smallBoards[i][j] = new TicTacToeBoard();
-            // Each small board is a 3x3 Tic-Tac-Toe
-            bigBoard[i][j] = 0; // Initially, no winner in any small board
-        }
-    }
-    this->n_moves = 0;
-}
-
-bool Ultimate_Tic_Tac_Toe_Board::update_board(int x, int y, char symbol) {
-    int smallX = x / 3, smallY = y / 3; // Determine which small board
-    int cellX = x % 3, cellY = y % 3;   // Determine cell in the small board
-
-    // Check if the small board is actually a TicTacToeBoard
-    TicTacToeBoard *smallBoardPtr = dynamic_cast<TicTacToeBoard *>(smallBoards[smallX][smallY]);
-    if (smallBoardPtr != nullptr) {
-        // Ensure the small board is not already claimed
-        if (bigBoard[smallX][smallY] != 0) {
-            cout << "This board has already been claimed!" << endl;
-            return false;
-        }
-
-        // Ensure move is valid within the smaller board
-        if (smallBoardPtr->get_cell(cellX, cellY) == 0) {
-            smallBoardPtr->update_board(cellX, cellY, symbol);
-
-            // Check if the small board is won or drawn
-            if (smallBoardPtr->is_win()) {
-                bigBoard[smallX][smallY] = symbol; // Mark winner in big board
-            } else if (smallBoardPtr->is_draw()) {
-                bigBoard[smallX][smallY] = '-'; // Mark as draw
+                    connect(cell, &QPushButton::clicked, this, &UltimateTicTacToeWidget::handleCellClick);
+                }
             }
-            this->n_moves++;
+
+            QWidget* smallBoardWidget = new QWidget(this);
+            smallBoardWidget->setLayout(smallBoardLayout);
+            mainLayout->addWidget(smallBoardWidget, i, j);
+
+            bigBoard[i][j] = 0; // Initialize big board as empty
+        }
+    }
+
+    setLayout(mainLayout);
+}
+
+void UltimateTicTacToeWidget::handleCellClick() {
+    QPushButton* clickedButton = qobject_cast<QPushButton*>(sender());
+    if (!clickedButton || clickedButton->text() != ".") return;
+
+    // Find the button's coordinates in the small board
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            for (int x = 0; x < 3; ++x) {
+                for (int y = 0; y < 3; ++y) {
+                    if (smallBoards[i][j][x][y] == clickedButton) {
+                        updateSmallBoard(i, j, x, y, currentPlayer);
+                        if (checkWin(bigBoard)) {
+                            QMessageBox::information(this, "Game Over", QString("Player %1 wins!").arg(currentPlayer));
+                            return;
+                        } else if (checkDraw(bigBoard)) {
+                            QMessageBox::information(this, "Game Over", "It's a draw!");
+                            return;
+                        }
+                        switchPlayer();
+                        return;
+                    }
+                }
+            }
+        }
+    }
+}
+
+void UltimateTicTacToeWidget::updateSmallBoard(int bigX, int bigY, int cellX, int cellY, char symbol) {
+    QPushButton* button = smallBoards[bigX][bigY][cellX][cellY];
+    button->setText(QString(symbol));
+
+    // Check if small board is won or drawn
+    char smallBoard[3][3] = {0};
+    for (int x = 0; x < 3; ++x) {
+        for (int y = 0; y < 3; ++y) {
+            smallBoard[x][y] = smallBoards[bigX][bigY][x][y]->text().toLatin1();
+        }
+    }
+
+    if (checkWin(smallBoard)) {
+        bigBoard[bigX][bigY] = symbol;
+    } else if (checkDraw(smallBoard)) {
+        bigBoard[bigX][bigY] = '-';
+    }
+}
+
+bool UltimateTicTacToeWidget::checkWin(const char board[3][3]) {
+    for (int i = 0; i < 3; ++i) {
+        if ((board[i][0] != 0 && board[i][0] == board[i][1] && board[i][1] == board[i][2]) ||
+            (board[0][i] != 0 && board[0][i] == board[1][i] && board[1][i] == board[2][i])) {
             return true;
         }
     }
-    return false; // Return false if it's not a TicTacToeBoard or the move is invalid
+    return (board[0][0] != 0 && board[0][0] == board[1][1] && board[1][1] == board[2][2]) ||
+           (board[0][2] != 0 && board[0][2] == board[1][1] && board[1][1] == board[2][0]);
 }
 
-
-// Returns true if there is any winner
-bool Ultimate_Tic_Tac_Toe_Board::is_win() {
-    // Check rows, columns, and diagonals in the big board
-    for (int i = 0; i < 3; i++) {
-        if ((bigBoard[i][0] != 0 && bigBoard[i][0] == bigBoard[i][1] && bigBoard[i][1] == bigBoard[i][2]) || // Row
-            (bigBoard[0][i] != 0 && bigBoard[0][i] == bigBoard[1][i] && bigBoard[1][i] == bigBoard[2][i])) { // Column
-            cout << "Player " << bigBoard[i][0] << " wins the game!" << endl; // Declare winner
-            over = true;
-            return true;
+bool UltimateTicTacToeWidget::checkDraw(const char board[3][3]) {
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            if (board[i][j] == 0) return false;
         }
     }
-    // Check diagonals
-    if ((bigBoard[0][0] != 0 && bigBoard[0][0] == bigBoard[1][1] && bigBoard[1][1] == bigBoard[2][2]) ||
-        (bigBoard[0][2] != 0 && bigBoard[0][2] == bigBoard[1][1] && bigBoard[1][1] == bigBoard[2][0])) {
-        cout << "Player " << bigBoard[1][1] << " wins the game!" << endl; // Declare winner
-        over = true;
-        return true;
-    }
-    return false;
+    return true;
 }
 
-// Return true if 9 moves are done and no winner
-bool Ultimate_Tic_Tac_Toe_Board::is_draw() {
-    return (this->n_moves == 81 && !is_win());
-}
-
-bool Ultimate_Tic_Tac_Toe_Board::game_is_over() {
-    return over || is_draw();
-}
-
-// ---------------------------- PLAYER CLASS
-
-// Constructor for X_O_Player
-Ultimate_Tic_Tac_Toe_Player::Ultimate_Tic_Tac_Toe_Player(string name, char symbol) : Player<char>(name, symbol) {}
-
-void Ultimate_Tic_Tac_Toe_Player::getmove(int &x, int &y) {
-    while (true) {
-        cout << "Enter your move (row space column, e.g., 1 3): ";
-        cin >> x >> y;
-        x--;
-        y--; // Convert to 0-based indexing
-        if (cin.fail() || x < 0 || x >= 9 || y < 0 || y >= 9) {
-            cin.clear();
-            cin.ignore(INT_MAX, '\n');
-            cout << "Invalid input. Try again.\n";
-            continue;
-        }
-        break;
-    }
-}
-
-// ---------------------------- RANDOM PLAYER CLASS
-
-// Constructor for X_O_Random_Player
-Ultimate_Tic_Tac_Toe_Random_Player::Ultimate_Tic_Tac_Toe_Random_Player(char symbol) : RandomPlayer<char>(symbol) {
-    this->dimension = 9;
-    this->name = "Random Computer Player";
-    srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
-}
-
-void Ultimate_Tic_Tac_Toe_Random_Player::getmove(int &x, int &y) {
-    x = rand() % this->dimension;  // Random number between 0 and 2
-    y = rand() % this->dimension;
+void UltimateTicTacToeWidget::switchPlayer() {
+    currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
 }
 
