@@ -14,7 +14,7 @@
    <string>Tic Tac Masterpiece</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="resources.qrc">
     <normaloff>:/Img/tic-tac-toe-icon.ico</normaloff>:/Img/tic-tac-toe-icon.ico</iconset>
   </property>
   <property name="styleSheet">
@@ -83,7 +83,7 @@ stop:1 rgb(86, 143, 151)
          </property>
          <property name="font">
           <font>
-           <pointsize>42</pointsize>
+           <pointsize>55</pointsize>
            <italic>true</italic>
            <bold>true</bold>
           </font>
@@ -92,13 +92,13 @@ stop:1 rgb(86, 143, 151)
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: #000;</string>
+          <string notr="true">color: white;</string>
          </property>
          <property name="text">
           <string>Tic Tac Masterpiece</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignHCenter</set>
          </property>
         </widget>
        </item>
@@ -117,6 +117,100 @@ stop:1 rgb(86, 143, 151)
        <property name="rightMargin">
         <number>200</number>
        </property>
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="startBtn">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>18</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
+	stop:0 #c8b6ff
+	stop:1 #7ccbd6);
+    color: #000000; 
+    border: 2px solid rgb(0,0,0) ;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0  rgb(72, 149, 239)
+	stop:1  rgb(64, 41, 143));
+	color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Start</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="creditsBtn">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>18</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
+	stop:0 #c8b6ff
+	stop:1 #7ccbd6);
+    color: #000; 
+    border: 2px solid rgb(0,0,0) ;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0  rgb(72, 149, 239)
+	stop:1  rgb(64, 41, 143));
+    color: #ffffff; 
+}</string>
+            </property>
+            <property name="text">
+             <string>Credits</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
        <item row="0" column="1">
         <layout class="QVBoxLayout" name="verticalLayout_3">
          <property name="leftMargin">
@@ -135,16 +229,17 @@ stop:1 rgb(86, 143, 151)
            </property>
            <property name="font">
             <font>
-             <pointsize>16</pointsize>
+             <pointsize>18</pointsize>
              <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
-stop:0  rgb(255,255,255)
-stop:1 rgb(86, 143, 151));
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
+	stop:1 #c8b6ff
+	stop:0 #7ccbd6);
+	
     color: #000; 
     border: 2px solid rgb(0,0,0) ;
     border-radius: 20px;
@@ -152,7 +247,9 @@ stop:1 rgb(86, 143, 151));
 }
 
 QPushButton:hover {
-    background-color:rgb(0,0,0);
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0  rgb(72, 149, 239)
+	stop:1  rgb(64, 41, 143));
     color: #ffffff; 
 }</string>
            </property>
@@ -171,16 +268,16 @@ QPushButton:hover {
            </property>
            <property name="font">
             <font>
-             <pointsize>16</pointsize>
+             <pointsize>18</pointsize>
              <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
-stop:0  rgb(255,255,255)
-stop:1 rgb(86, 143, 151));
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
+	stop:1 #c8b6ff
+	stop:0 #7ccbd6);
     color: #000; 
     border: 2px solid rgb(0,0,0) ;
     border-radius: 20px;
@@ -188,7 +285,9 @@ stop:1 rgb(86, 143, 151));
 }
 
 QPushButton:hover {
-    background-color:rgb(0,0,0);
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0  rgb(236, 87, 102)
+	stop:1  rgb(84, 1, 1));
     color: #ffffff; 
 }</string>
            </property>
@@ -199,97 +298,14 @@ QPushButton:hover {
          </item>
         </layout>
        </item>
-       <item row="0" column="0">
-        <widget class="QWidget" name="widget" native="true">
-         <layout class="QVBoxLayout" name="verticalLayout_4">
-          <property name="leftMargin">
-           <number>20</number>
-          </property>
-          <property name="rightMargin">
-           <number>20</number>
-          </property>
-          <item>
-           <widget class="QPushButton" name="startBtn">
-            <property name="minimumSize">
-             <size>
-              <width>150</width>
-              <height>45</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>16</pointsize>
-              <italic>true</italic>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
-background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
-
-stop:0  rgb(155, 90, 215)
-stop:1  rgb(255,255,255));
-    color: #000; 
-    border: 2px solid rgb(0,0,0) ;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-QPushButton:hover {
-    background-color:rgb(0,0,0);
-    color: #ffffff; 
-}</string>
-            </property>
-            <property name="text">
-             <string>Start</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="creditsBtn">
-            <property name="minimumSize">
-             <size>
-              <width>150</width>
-              <height>45</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>16</pointsize>
-              <italic>true</italic>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
-background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
-stop:0  rgb(155, 90, 215)
-stop:1  rgb(255,255,255));
-    color: #000; 
-    border: 2px solid rgb(0,0,0) ;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-QPushButton:hover {
-    background-color:rgb(0,0,0);
-    color: #ffffff; 
-}</string>
-            </property>
-            <property name="text">
-             <string>Credits</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
       </layout>
      </widget>
     </item>
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
