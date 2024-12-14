@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1085</width>
-    <height>730</height>
+    <height>953</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -84,8 +84,8 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>575</width>
-                <height>575</height>
+                <width>570</width>
+                <height>570</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1424,7 +1424,19 @@ color:rgb(0,0,0);</string>
          </item>
          <item>
           <widget class="QFrame" name="frame_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="leftMargin">
+             <number>200</number>
+            </property>
+            <property name="rightMargin">
+             <number>200</number>
+            </property>
             <item>
              <widget class="QFrame" name="frame_5">
               <layout class="QHBoxLayout" name="horizontalLayout_4">

@@ -17,7 +17,9 @@ SOURCES += \
     mainwindow.cpp \
     manuwindow.cpp \
     susgame.cpp \
-    ultimategame.cpp
+    ultimategame.cpp \
+    susEngine.cpp \
+    ultimateXoEngine.cpp
 
 HEADERS += \
     creditswindow.h \

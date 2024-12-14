@@ -61,6 +61,12 @@ void ManuWindow::on_nextBtn_clicked()
         return;
     }
 
+    // If the first input = the second input
+    if (ui->firstInput->text() == ui->secondInput->text()) {
+        QMessageBox::warning(this, "Invalid Input", "Both players cannot have the same name.");
+        return;
+    }
+
     if (ui->susGameChoice->isChecked()) {
         susgame = new susGame(this);
         susgame->showFullScreen();

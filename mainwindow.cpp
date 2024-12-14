@@ -7,6 +7,7 @@
 #include "ui_creditswindow.h"
 #include "manuwindow.h"
 #include <QIcon>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -33,7 +34,14 @@ void MainWindow::showMainWindow()
 
 void MainWindow::on_quitBtn_clicked()
 {
-    this->close();
+    QMessageBox::StandardButton reply;
+    reply = QMessageBox::question(this, "Quit Confirmation",
+                                "Are you sure you want to quit?",
+                                QMessageBox::Yes | QMessageBox::No);
+
+    if (reply == QMessageBox::Yes) {
+        this->close();   // Close the application
+    }
 }
 
 void MainWindow::on_helpBtn_clicked()
@@ -53,7 +61,6 @@ void MainWindow::on_creditsBtn_clicked()
     }
     creditWindow->show();
 }
-
 
 void MainWindow::on_startBtn_clicked()
 {
