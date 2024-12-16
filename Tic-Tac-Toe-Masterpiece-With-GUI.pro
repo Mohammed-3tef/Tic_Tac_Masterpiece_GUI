@@ -18,8 +18,8 @@ SOURCES += \
     manuwindow.cpp \
     susgame.cpp \
     ultimategame.cpp \
-    susEngine.cpp \
-    ultimateXoEngine.cpp
+    win.cpp \
+    draw.cpp
 
 HEADERS += \
     creditswindow.h \
@@ -29,7 +29,9 @@ HEADERS += \
     mainwindow.h \
     manuwindow.h \
     susgame.h \
-    ultimategame.h
+    ultimategame.h \
+    win.h \
+    draw.h
 
 FORMS += \
     creditswindow.ui \
@@ -39,7 +41,9 @@ FORMS += \
     mainwindow.ui \
     manuwindow.ui \
     susgame.ui \
-    ultimategame.ui
+    ultimategame.ui \
+    win.ui \
+    draw.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

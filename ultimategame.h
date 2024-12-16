@@ -14,7 +14,7 @@ class ultimateGame : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit ultimateGame(QWidget *parent = nullptr);
+    explicit ultimateGame(QWidget *parent = nullptr, const QString &firstPlayer = "", const QString &secondPlayer = "");
     ~ultimateGame();
 
 signals:

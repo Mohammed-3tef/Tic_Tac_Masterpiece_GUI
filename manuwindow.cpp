@@ -1,9 +1,7 @@
 #include "manuwindow.h"
 #include "ultimategame.h"
 #include "ui_manuwindow.h"
-#include "ui_ultimategame.h"
 #include "susgame.h"
-#include "ui_susgame.h"
 #include "QMessageBox"
 #include <QIcon>
 
@@ -68,12 +66,16 @@ void ManuWindow::on_nextBtn_clicked()
     }
 
     if (ui->susGameChoice->isChecked()) {
-        susgame = new susGame(this);
+        QString firstPlayer = ui->firstInput->text();
+        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
+        susgame = new susGame(this, firstPlayer, secondPlayer);
         susgame->showFullScreen();
     }
 
     if (ui->ultimateGameChoice->isChecked()) {
-        ultimategame = new ultimateGame(this);
+        QString firstPlayer = ui->firstInput->text();
+        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
+        ultimategame = new ultimateGame(this, firstPlayer, secondPlayer);
         ultimategame->showFullScreen();
     }
 }
@@ -83,7 +85,7 @@ void ManuWindow::on_onePlayerChoice_clicked()
 {
     ui->firstInput->setEnabled(true);
     ui->secondInput->setEnabled(false);
-    ui->secondInput->setText("Random Computer Player");
+    ui->secondInput->setText("Random Player");
 }
 
 void ManuWindow::on_twoPlayerChoice_clicked()

@@ -5,12 +5,14 @@
 #include "help_ultimate.h"
 
 
-ultimateGame::ultimateGame(QWidget *parent)
+ultimateGame::ultimateGame(QWidget *parent, const QString &firstPlayer, const QString &secondPlayer)
     : QMainWindow(parent)
     , ui(new Ui::ultimateGame)
     , helpultimate(nullptr)
 {
     ui->setupUi(this);
+    ui->ScoreX->setText(firstPlayer);
+    ui->ScoreO->setText(secondPlayer);
 }
 
 ultimateGame::~ultimateGame()

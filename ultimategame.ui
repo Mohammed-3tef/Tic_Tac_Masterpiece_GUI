@@ -1443,7 +1443,7 @@ color:rgb(0,0,0);</string>
                <item>
                 <widget class="QFrame" name="frame_2">
                  <layout class="QHBoxLayout" name="horizontalLayout_2">
-                  <item>
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter">
                    <widget class="QLabel" name="ScoreX">
                     <property name="font">
                      <font>
@@ -1527,7 +1527,7 @@ color:rgb(0,0,0);</string>
                     </property>
                    </widget>
                   </item>
-                  <item>
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter">
                    <widget class="QLabel" name="ScoreO">
                     <property name="font">
                      <font>

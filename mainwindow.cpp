@@ -3,8 +3,6 @@
 #include "creditswindow.h"
 #include "manuwindow.h"
 #include "ui_mainwindow.h"
-#include "ui_helpwindow.h"
-#include "ui_creditswindow.h"
 #include "manuwindow.h"
 #include <QIcon>
 #include <QMessageBox>
