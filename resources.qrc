@@ -2,5 +2,6 @@
     <qresource prefix="/icons"/>
     <qresource prefix="/">
         <file>Img/tic-tac-toe-icon.ico</file>
+        <file>Img/SUS.jpeg</file>
     </qresource>
 </RCC>

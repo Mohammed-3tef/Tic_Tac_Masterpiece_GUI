@@ -1,6 +1,6 @@
 # Tic Tac Toe Masterpiece with GUI 🎮
 
-A modern, interactive, and visually appealing implementation of the classic Tic Tac Toe game with a graphical user interface (GUI). Play against a friend or challenge an AI to test your strategy and decision-making skills!
+A modern, interactive, and visually appealing implementation of the classic Tic Tac Toe game with a graphical user interface (GUI). Play against a friend or challenge a random computer player to test your strategy and decision-making skills!
 
 ## 📋 Features
 
