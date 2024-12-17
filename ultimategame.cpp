@@ -311,20 +311,6 @@ bool ultimateGame::isWinBig() {
             }
 
             if (checkBigBoardWinner().first) {
-                win = new Win(this);
-                QString winner = checkBigBoardWinner().second == 'X' ? ui->ScoreX->text() + " Wins!" : ui->ScoreO->text() + " Wins!";
-                win->setWinnerText(winner);
-                win->setAttribute(Qt::WA_DeleteOnClose);
-                win->showFullScreen();
-                for (int row = 1; row <= 9; ++row) {
-                    for (int col = 1; col <= 9; ++col) {
-                        QString buttonName = QString("x%1%2").arg(row).arg(col);
-                        QPushButton* button = this->findChild<QPushButton*>(buttonName);
-                        if (button) {
-                            button->setEnabled(false);
-                        }
-                    }
-                }
                 return true;
             }
         }
@@ -334,7 +320,29 @@ bool ultimateGame::isWinBig() {
 
 // Check if game is over
 void ultimateGame::checkGameState() {
-    if (isWinBig() || isDrawBig()) {
+    if (isWinBig()) {
+        win = new Win(this);
+        QString winner = checkBigBoardWinner().second == 'X' ? ui->ScoreX->text() + " Wins!" : ui->ScoreO->text() + " Wins!";
+        win->setWinnerText(winner);
+        win->setAttribute(Qt::WA_DeleteOnClose);
+        win->showFullScreen();
+        for (int row = 1; row <= 9; ++row) {
+            for (int col = 1; col <= 9; ++col) {
+                QString buttonName = QString("x%1%2").arg(row).arg(col);
+                QPushButton* button = this->findChild<QPushButton*>(buttonName);
+                if (button) {
+                    button->setEnabled(false);
+                }
+            }
+        }
+        return;
+    }
+
+    if (isDrawBig()) {
+        draw = new Draw(this);
+        draw->setWindowTitle("Draw!");
+        draw->setAttribute(Qt::WA_DeleteOnClose);
+        draw->showFullScreen();
         return;
     }
 
