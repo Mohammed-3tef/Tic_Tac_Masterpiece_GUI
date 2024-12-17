@@ -312,8 +312,8 @@ bool ultimateGame::isWinBig() {
 
             if (checkBigBoardWinner().first) {
                 win = new Win(this);
-                QString winner = checkBigBoardWinner().second == 'X' ? ui->ScoreO->text() + " Wins!" : ui->ScoreX->text() + " Wins!";
-                // win->setWinnerText(winner);
+                QString winner = checkBigBoardWinner().second == 'X' ? ui->ScoreX->text() + " Wins!" : ui->ScoreO->text() + " Wins!";
+                win->setWinnerText(winner);
                 win->setAttribute(Qt::WA_DeleteOnClose);
                 win->showFullScreen();
                 for (int row = 1; row <= 9; ++row) {
