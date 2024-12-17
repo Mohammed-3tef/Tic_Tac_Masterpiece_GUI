@@ -295,7 +295,7 @@ bool ultimateGame::isWinBig() {
     for (int i = 0; i < 9; ++i) {
         Section s = sections[i];
         if (isWin(s.startRow, s.startCol, s.endRow, s.endCol)) {
-            QString winner = (n2 % 2 == 1) ? "O" : "X";  // Determine who won (based on the turn count)
+            QString winner = (n2 % 2 == 0) ? "O" : "X";  // Determine who won (based on the turn count)
             bigBoard[s.bigRow][s.bigCol] = winner;
 
             // Disable the buttons in the winning section and mark them
