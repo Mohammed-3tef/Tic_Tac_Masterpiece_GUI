@@ -11,13 +11,9 @@ A modern, interactive, and visually appealing implementation of the classic Tic 
 - **Reset Option**: Start a new game at any time.
 - **Customizable Settings**: Modify game preferences for an enhanced experience.
 
-## Watch the Demo
+## 🖥️ Screenshots
 
-
-
-https://github.com/user-attachments/assets/3ac86cbe-6585-4daa-9ecd-1dc049e1ff98
-
-
+*Include a few images of the game interface here to showcase its design and functionality.*
 
 ---
 
