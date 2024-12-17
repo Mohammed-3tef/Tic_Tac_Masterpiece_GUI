@@ -129,7 +129,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -161,7 +162,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -177,7 +179,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -209,7 +211,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -225,7 +227,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -257,7 +260,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -289,7 +293,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -337,7 +342,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -385,7 +390,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -417,7 +423,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -449,7 +456,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -465,7 +473,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -497,7 +505,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -513,7 +521,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -545,7 +554,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -561,7 +571,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -593,7 +603,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -609,7 +619,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -641,7 +652,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -657,7 +669,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -689,7 +701,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -721,7 +733,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -769,7 +781,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -817,7 +830,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -849,7 +862,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -881,7 +894,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -897,7 +910,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -929,7 +943,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -945,7 +960,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -977,7 +992,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -993,7 +1008,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1025,7 +1041,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1041,7 +1058,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1073,7 +1090,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1089,7 +1106,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1121,7 +1139,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1153,7 +1172,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1201,7 +1221,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1249,7 +1269,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1281,7 +1302,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1313,7 +1335,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1329,7 +1352,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1361,7 +1384,7 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">background-color:rgb(0,0,0);</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1377,7 +1400,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1409,7 +1433,8 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">background-color:#fff
+;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1471,62 +1496,12 @@ color:rgb(0,0,0);</string>
                     </property>
                    </widget>
                   </item>
-                  <item>
-                   <widget class="QLabel" name="XX">
-                    <property name="font">
-                     <font>
-                      <pointsize>28</pointsize>
-                      <bold>true</bold>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: white;</string>
-                    </property>
-                    <property name="frameShape">
-                     <enum>QFrame::Shape::NoFrame</enum>
-                    </property>
-                    <property name="lineWidth">
-                     <number>2</number>
-                    </property>
-                    <property name="text">
-                     <string>0</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignmentFlag::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
                  </layout>
                 </widget>
                </item>
                <item>
                 <widget class="QFrame" name="frame">
                  <layout class="QHBoxLayout" name="horizontalLayout">
-                  <item>
-                   <widget class="QLabel" name="OO">
-                    <property name="font">
-                     <font>
-                      <pointsize>28</pointsize>
-                      <bold>true</bold>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: white;</string>
-                    </property>
-                    <property name="frameShape">
-                     <enum>QFrame::Shape::NoFrame</enum>
-                    </property>
-                    <property name="lineWidth">
-                     <number>2</number>
-                    </property>
-                    <property name="text">
-                     <string>0</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignmentFlag::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
                    <widget class="QLabel" name="ScoreO">
                     <property name="font">
