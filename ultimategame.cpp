@@ -53,32 +53,13 @@ void ultimateGame::on_exitButton_clicked()
         }
     }
 
-    ui->x11->setText(""); ui->x12->setText(""); ui->x13->setText(""); ui->x14->setText(""); ui->x15->setText("");
-    ui->x16->setText(""); ui->x17->setText(""); ui->x18->setText(""); ui->x19->setText("");
-
-    ui->x21->setText(""); ui->x22->setText(""); ui->x23->setText(""); ui->x24->setText(""); ui->x25->setText("");
-    ui->x26->setText(""); ui->x27->setText(""); ui->x28->setText(""); ui->x29->setText("");
-
-    ui->x31->setText(""); ui->x32->setText(""); ui->x33->setText(""); ui->x34->setText(""); ui->x35->setText("");
-    ui->x36->setText(""); ui->x37->setText(""); ui->x38->setText(""); ui->x39->setText("");
-
-    ui->x41->setText(""); ui->x42->setText(""); ui->x43->setText(""); ui->x44->setText(""); ui->x45->setText("");
-    ui->x46->setText(""); ui->x47->setText(""); ui->x48->setText(""); ui->x49->setText("");
-
-    ui->x51->setText(""); ui->x52->setText(""); ui->x53->setText(""); ui->x54->setText(""); ui->x55->setText("");
-    ui->x56->setText(""); ui->x57->setText(""); ui->x58->setText(""); ui->x59->setText("");
-
-    ui->x61->setText(""); ui->x62->setText(""); ui->x63->setText(""); ui->x64->setText(""); ui->x65->setText("");
-    ui->x66->setText(""); ui->x67->setText(""); ui->x68->setText(""); ui->x69->setText("");
-
-    ui->x71->setText(""); ui->x72->setText(""); ui->x73->setText(""); ui->x74->setText(""); ui->x75->setText("");
-    ui->x76->setText(""); ui->x77->setText(""); ui->x78->setText(""); ui->x79->setText("");
-
-    ui->x81->setText(""); ui->x82->setText(""); ui->x83->setText(""); ui->x84->setText(""); ui->x85->setText("");
-    ui->x86->setText(""); ui->x87->setText(""); ui->x88->setText(""); ui->x89->setText("");
-
-    ui->x91->setText(""); ui->x92->setText(""); ui->x93->setText(""); ui->x94->setText(""); ui->x95->setText("");
-    ui->x96->setText(""); ui->x97->setText(""); ui->x98->setText(""); ui->x99->setText("");
+    for (int row = 1; row <= 9; ++row) {
+        for (int col = 1; col <= 9; ++col) {
+            QString buttonName = QString("x%1%2").arg(row).arg(col);
+            QPushButton *button = this->findChild<QPushButton *>(buttonName);
+            button->setText("");
+        }
+    }
 
     emit backToManuWindow();
     this->close();
@@ -294,7 +275,7 @@ bool ultimateGame::isWinBig() {
 
     for (int i = 0; i < 9; ++i) {
         Section s = sections[i];
-        if (isWin(s.startRow, s.startCol, s.endRow, s.endCol)) {
+        if (isWin(s.startRow, s.startCol, s.endRow, s.endCol) && bigBoard[s.bigRow][s.bigCol].isEmpty()) {
             QString winner = (n2 % 2 == 0) ? "O" : "X";  // Determine who won (based on the turn count)
             bigBoard[s.bigRow][s.bigCol] = winner;
 
