@@ -169,13 +169,24 @@ bool ultimateGame::isPattern(const QString& a, const QString& b, const QString& 
 
 // Function to check for a draw on the big board
 bool ultimateGame::isDrawBig() {
-    int emptyCells = 0;
+    int emptyCells = 0, emptyButtons = 0;
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
             if (bigBoard[i][j].isEmpty()) emptyCells++;
         }
     }
-    if (emptyCells == 0 && !isWinBig()) {
+
+    for (int row = 1; row <= 9; row++) {
+        for (int col = 1; col <= 9; col++) {
+            QString buttonName = QString("x%1%2").arg(row).arg(col);
+            QPushButton* button = this->findChild<QPushButton*>(buttonName);
+            if (button->isEnabled()) {
+                emptyButtons++;
+            }
+        }
+    }
+
+    if ((emptyCells == 0 && !isWinBig()) || emptyButtons == 0) {
         return true;
     }
     return false;
@@ -273,9 +284,34 @@ bool ultimateGame::isWinBig() {
                           {4, 1, 6, 3, 1, 0}, {4, 4, 6, 6, 1, 1}, {4, 7, 6, 9, 1, 2},
                           {7, 1, 9, 3, 2, 0}, {7, 4, 9, 6, 2, 1}, {7, 7, 9, 9, 2, 2}};
 
+    // Count empty cells in this section
     for (int i = 0; i < 9; ++i) {
         Section s = sections[i];
-        if (isWin(s.startRow, s.startCol, s.endRow, s.endCol) && bigBoard[s.bigRow][s.bigCol].isEmpty()) {
+        int emptyCells = 0;
+        for (int row = s.startRow; row <= s.endRow; row++) {
+            for (int col = s.startCol; col <= s.endCol; col++) {
+                QString buttonName = QString("x%1%2").arg(row).arg(col);
+                QPushButton* button = this->findChild<QPushButton*>(buttonName);
+                if (button->text().isEmpty()) emptyCells++;
+            }
+        }
+
+        // // If no empty cells are found, disable the buttons in the section and mark it as completed
+        if (emptyCells == 0) {
+            for (int row = s.startRow; row <= s.endRow; row++) {
+                for (int col = s.startCol; col <= s.endCol; col++) {
+                    QString buttonName = QString("x%1%2").arg(row).arg(col);
+                    QPushButton* button = this->findChild<QPushButton*>(buttonName);
+                    if (button) {
+                        button->setEnabled(false);
+                        button->setStyleSheet("background-color: rgba(46, 4, 71, 255); color: #fff; font-size: 20px; font-weight: bold; padding : 0;");
+                    }
+                }
+            }
+        }
+
+        // Check if the section is a winning one and if the corresponding big board position is empty
+        else if (isWin(s.startRow, s.startCol, s.endRow, s.endCol) && bigBoard[s.bigRow][s.bigCol].isEmpty()) {
             QString winner = (n2 % 2 == 0) ? "O" : "X";  // Determine who won (based on the turn count)
             bigBoard[s.bigRow][s.bigCol] = winner;
 
@@ -291,6 +327,7 @@ bool ultimateGame::isWinBig() {
                 }
             }
 
+            // Check if the big board has a winner
             if (checkBigBoardWinner().first) {
                 return true;
             }
