@@ -1,4 +1,4 @@
-# Tic Tac Toe Masterpiece with GUI 🎮
+# Tic Tac Masterpiece with GUI 🎮
 
 A modern, interactive, and visually appealing implementation of the classic Tic Tac Toe game with a graphical user interface (GUI). Play against a friend or challenge a random computer player to test your strategy and decision-making skills!
 
@@ -13,11 +13,13 @@ A modern, interactive, and visually appealing implementation of the classic Tic 
 
 ## 🖥️ Watch the Demo
 
-
 https://github.com/user-attachments/assets/c93ab2b0-636f-47d8-9aa1-3b6df3d37e5d
 
+## 📥 Download
 
----
+Get the latest version of **Tic Tac Toe Masterpiece with GUI**: [Download Here](https://github.com/NaghamProgrammer/Tic-Tac-Toe-Masterpiece-With-GUI/releases/latest) <br>
+Visit the release page to download the precompiled binaries for your system. Extract the downloaded file and run the executable to start playing!
+
 
 ## 🚀 How to Run
 
@@ -37,7 +39,7 @@ https://github.com/user-attachments/assets/c93ab2b0-636f-47d8-9aa1-3b6df3d37e5d
    - Click on the "Build" button in Qt Creator.
 4. Run the application by clicking the "Run" button.
 
----
+
 
 ## 🛠️ Technology Stack
 
@@ -45,7 +47,7 @@ https://github.com/user-attachments/assets/c93ab2b0-636f-47d8-9aa1-3b6df3d37e5d
 - **Framework**: Qt
 - **Design Paradigm**: Object-Oriented Programming (OOP)
 
----
+
 
 ## 🧠 How It Works
 
@@ -54,7 +56,7 @@ https://github.com/user-attachments/assets/c93ab2b0-636f-47d8-9aa1-3b6df3d37e5d
 3. **Win Logic**: The program determines if a player has won, lost, or tied.
 4. **Reset Option**: Start fresh by resetting the board.
 
----
+
 
 ## 🤝 Contributions
 
@@ -65,20 +67,21 @@ Contributions are welcome! Here's how you can help:
 4. Push to the branch: `git push origin feature/YourFeatureName`.
 5. Submit a pull request.
 
----
+
 
 ## 🌟 Acknowledgments
 
 Special thanks to everyone who has supported and inspired this project.
 
----
+
 
 ## ✍️ Authors
 
 - **Esraa Emary Abd El-Salam**: [GitHub](https://github.com/esraa-emary) - [LinkedIn](https://www.linkedin.com/in/esraa-emary-b372b8303/)
 - **Mohammed Atef Abd El-Kader**: [GitHub](https://github.com/Mohammed-3tef) - [LinkedIn](https://www.linkedin.com/in/mohammed-atef-b0a408299/)
 - **Nagham Wael Mohammed El-Sayed**: [GitHub](https://github.com/NaghamProgrammer) - [LinkedIn](https://www.linkedin.com/in/nagham-wael-5aa70a318/)
----
+
+
 
 ## 📜 License
 
