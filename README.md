@@ -75,6 +75,12 @@ Special thanks to everyone who has supported and inspired this project.
 
 
 
+## 🖥️ Console Version
+
+Prefer the classic console-based experience? Check out the **Tic Tac Toe Masterpiece Console Version**: [Console Version Repository](https://github.com/Mohammed-3tef/Tic_Tac_Masterpiece)
+
+
+
 ## ✍️ Authors
 
 - **Esraa Emary Abd El-Salam**: [GitHub](https://github.com/esraa-emary) - [LinkedIn](https://www.linkedin.com/in/esraa-emary-b372b8303/)
