@@ -9,7 +9,6 @@ A modern, interactive, and visually appealing implementation of the classic Tic 
 - **Intuitive GUI**: Built with a sleek, user-friendly interface.
 - **Real-Time Feedback**: Instant indication of wins, losses, or ties.
 - **Reset Option**: Start a new game at any time.
-- **Customizable Settings**: Modify game preferences for an enhanced experience.
 
 ## 🖥️ Watch the Demo
 
@@ -40,13 +39,11 @@ Visit the release page to download the precompiled binaries for your system. Ext
 4. Run the application by clicking the "Run" button.
 
 
-
 ## 🛠️ Technology Stack
 
 - **Programming Language**: C++
 - **Framework**: Qt
 - **Design Paradigm**: Object-Oriented Programming (OOP)
-
 
 
 ## 🧠 How It Works
@@ -55,7 +52,6 @@ Visit the release page to download the precompiled binaries for your system. Ext
 2. **Game Board**: Interact with the board to place your mark (X or O).
 3. **Win Logic**: The program determines if a player has won, lost, or tied.
 4. **Reset Option**: Start fresh by resetting the board.
-
 
 
 ## 🤝 Contributions
@@ -68,17 +64,14 @@ Contributions are welcome! Here's how you can help:
 5. Submit a pull request.
 
 
-
 ## 🌟 Acknowledgments
 
-Special thanks to everyone who has supported and inspired this project.
-
+We would like to thank our professor, Dr. Mohamed El-Ramly, for his guidance and support throughout this project and our academic journey. We are grateful for the opportunity to work on this project and develop our programming skills.
 
 
 ## 🖥️ Console Version
 
 Prefer the classic console-based experience? Check out the **Tic Tac Toe Masterpiece Console Version**: [Console Version Repository](https://github.com/Mohammed-3tef/Tic_Tac_Masterpiece)
-
 
 
 ## ✍️ Authors
@@ -88,7 +81,9 @@ Prefer the classic console-based experience? Check out the **Tic Tac Toe Masterp
 - **Nagham Wael Mohammed El-Sayed**: [GitHub](https://github.com/NaghamProgrammer) - [LinkedIn](https://www.linkedin.com/in/nagham-wael-5aa70a318/)
 
 
-
 ## 📜 License
 
 This project is licensed under the [LICENSE](https://github.com/NaghamProgrammer/Tic-Tac-Toe-Masterpiece-With-GUI/blob/main/LICENSE). You are free to use, modify, and distribute this project.
+
+
+### **Enjoy the games! Have fun and let us know your thoughts!! 🎉🎲**
