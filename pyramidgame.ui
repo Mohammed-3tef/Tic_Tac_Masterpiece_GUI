@@ -1,40 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>susGame</class>
- <widget class="QMainWindow" name="susGame">
+ <class>pyramidGame</class>
+ <widget class="QMainWindow" name="pyramidGame">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1174</width>
-    <height>854</height>
+    <width>1173</width>
+    <height>843</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SUS Tic Tac Toe</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">QMainWindow {
-background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,x3:1,y3:1
-
-,stop:0 #cbbf7a
-,stop:0.2 #cbbf7a
-,stop:0.47  rgb(81, 220, 224)
-,stop:0.53  rgb(81, 220, 224)
-,stop:0.8 #cbbf7a
-, stop:1 #cbbf7a
-
-);
-}
-</string>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
-    <property name="leftMargin">
-     <number>11</number>
-    </property>
-    <item>
-     <widget class="QLabel" name="label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1173</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_10">
+    <item row="0" column="0">
+     <widget class="QLabel" name="pyramid_1">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
         <horstretch>0</horstretch>
@@ -49,30 +40,55 @@ background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,x3:1,y3:1
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
+       <string notr="true">color: rgb(0, 0, 0);
+margin:0% 200%;</string>
       </property>
       <property name="text">
-       <string>SUS Tic Tac Toe</string>
+       <string>Pyramid Tic Tac Toe</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QFrame" name="sus">
+    <item row="1" column="0">
+     <widget class="QFrame" name="pyramid">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
       <property name="layoutDirection">
        <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QFrame" name="boardsus">
+       <property name="sizeConstraint">
+        <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>200</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>200</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+        <widget class="QFrame" name="boardpyramid_1">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -81,8 +97,8 @@ background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,x3:1,y3:1
          </property>
          <property name="minimumSize">
           <size>
-           <width>500</width>
-           <height>500</height>
+           <width>150</width>
+           <height>150</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -101,7 +117,7 @@ color:rgb(0,0,0);</string>
          <property name="midLineWidth">
           <number>0</number>
          </property>
-         <layout class="QGridLayout" name="gridLayout_3">
+         <layout class="QGridLayout" name="gridLayout_5">
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -115,7 +131,7 @@ color:rgb(0,0,0);</string>
            <number>0</number>
           </property>
           <item row="0" column="0">
-           <widget class="QPushButton" name="x11">
+           <widget class="QPushButton" name="x13_2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -130,6 +146,248 @@ font: 700 22pt &quot;Segoe UI&quot;;
 
 QPushButton:hover{
 	background-color: #fff;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+        <widget class="QFrame" name="boardpyramid_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>614</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #cbbf7a;
+color:rgb(0,0,0);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Sunken</enum>
+         </property>
+         <property name="lineWidth">
+          <number>10</number>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="3" column="5">
+           <widget class="QPushButton" name="x35_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700 22pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="x31_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700 22pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QPushButton" name="x32_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color:rgb(0,0,0);
+font: 700 22pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+background-color: #fff;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QPushButton" name="x34_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color:rgb(0,0,0);
+font: 700 22pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+background-color: #fff;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="x33_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700 22pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+        <widget class="QFrame" name="boardpyramid_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>382</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #cbbf7a;
+color:rgb(0,0,0);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Sunken</enum>
+         </property>
+         <property name="lineWidth">
+          <number>10</number>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="x23_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color:rgb(0,0,0);
+font: 700 22pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+background-color: #fff;
 }
 
 </string>
@@ -140,32 +398,7 @@ QPushButton:hover{
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="x12">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-background-color:rgb(0,0,0);
-font: 700 22pt &quot;Segoe UI&quot;;
-}
-
-QPushButton:hover{
-background-color: #fff;
-}
-
-</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QPushButton" name="x13">
+           <widget class="QPushButton" name="x22_2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -189,133 +422,8 @@ QPushButton:hover{
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QPushButton" name="x21">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-background-color:rgb(0,0,0);
-font: 700 22pt &quot;Segoe UI&quot;;
-}
-
-QPushButton:hover{
-background-color: #fff;
-}
-
-</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QPushButton" name="x22">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-background-color:rgb(81, 81, 81);
-font: 700 22pt &quot;Segoe UI&quot;;
-}
-
-QPushButton:hover{
-	background-color: #fff;
-}
-
-</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QPushButton" name="x23">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-background-color:rgb(0,0,0);
-font: 700 22pt &quot;Segoe UI&quot;;
-}
-
-QPushButton:hover{
-background-color: #fff;
-}
-
-</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QPushButton" name="x31">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-background-color:rgb(81, 81, 81);
-font: 700 22pt &quot;Segoe UI&quot;;
-}
-
-QPushButton:hover{
-	background-color: #fff;
-}
-
-</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QPushButton" name="x32">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-background-color:rgb(0,0,0);
-font: 700 22pt &quot;Segoe UI&quot;;
-}
-
-QPushButton:hover{
-background-color: #fff;
-}
-
-</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QPushButton" name="x33">
+          <item row="0" column="3">
+           <widget class="QPushButton" name="x24_2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -345,8 +453,8 @@ QPushButton:hover{
       </layout>
      </widget>
     </item>
-    <item>
-     <widget class="QFrame" name="frame_4">
+    <item row="2" column="0">
+     <widget class="QFrame" name="pyramid_3">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
@@ -356,7 +464,7 @@ QPushButton:hover{
       <property name="frameShadow">
        <enum>QFrame::Shadow::Raised</enum>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
        <property name="leftMargin">
         <number>200</number>
        </property>
@@ -364,16 +472,16 @@ QPushButton:hover{
         <number>200</number>
        </property>
        <item>
-        <widget class="QFrame" name="frame_6">
+        <widget class="QFrame" name="frame_8">
          <property name="styleSheet">
           <string>color: white;</string>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
           <item>
-           <widget class="QFrame" name="frame_2">
-            <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <widget class="QFrame" name="frame_9">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
              <item>
-              <widget class="QLabel" name="ScoreS">
+              <widget class="QLabel" name="ScoreX_2">
                <property name="font">
                 <font>
                  <pointsize>26</pointsize>
@@ -393,32 +501,7 @@ QPushButton:hover{
                 <number>5</number>
                </property>
                <property name="text">
-                <string>Score (S) </string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignmentFlag::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="SS">
-               <property name="font">
-                <font>
-                 <pointsize>26</pointsize>
-                 <bold>true</bold>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color: rgb(0, 0, 0);</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::Shape::NoFrame</enum>
-               </property>
-               <property name="lineWidth">
-                <number>2</number>
-               </property>
-               <property name="text">
-                <string>0</string>
+                <string>Score (X) </string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -429,35 +512,10 @@ QPushButton:hover{
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame">
-            <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <widget class="QFrame" name="frame_10">
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
              <item>
-              <widget class="QLabel" name="UU">
-               <property name="font">
-                <font>
-                 <pointsize>26</pointsize>
-                 <bold>true</bold>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color: rgb(0, 0, 0);</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::Shape::NoFrame</enum>
-               </property>
-               <property name="lineWidth">
-                <number>2</number>
-               </property>
-               <property name="text">
-                <string>0</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignmentFlag::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="ScoreU">
+              <widget class="QLabel" name="ScoreO_2">
                <property name="font">
                 <font>
                  <pointsize>26</pointsize>
@@ -474,7 +532,7 @@ QPushButton:hover{
                 <number>5</number>
                </property>
                <property name="text">
-                <string>Score (U)</string>
+                <string>Score (O)</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -488,7 +546,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="frame_5">
+        <widget class="QFrame" name="frame_11">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -498,9 +556,9 @@ QPushButton:hover{
          <property name="frameShadow">
           <enum>QFrame::Shadow::Raised</enum>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
-           <widget class="QPushButton" name="helpButton">
+           <widget class="QPushButton" name="helpButton_2">
             <property name="font">
              <font>
               <pointsize>20</pointsize>
@@ -535,7 +593,7 @@ background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="exitButton">
+           <widget class="QPushButton" name="exitButton_2">
             <property name="font">
              <font>
               <pointsize>20</pointsize>

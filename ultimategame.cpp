@@ -1,13 +1,14 @@
 #include "ultimategame.h"
 #include "ui_ultimategame.h"
-#include "manuwindow.h"
-#include "ui_manuwindow.h"
 #include "help_ultimate.h"
 #include "win.h"
 #include "draw.h"
 #include <QMessageBox>
 #include <QString>
 #include <QPair>
+#include <QEventLoop>
+#include <QTimer>
+#include <QDebug>
 #include <random> // For modern randomness
 
 int n2 = 0; // Turn counter
@@ -65,6 +66,12 @@ void ultimateGame::on_exitButton_clicked()
     this->close();
 }
 
+void delay2(int milliseconds) {
+    QEventLoop loop;
+    QTimer::singleShot(milliseconds, &loop, &QEventLoop::quit);
+    loop.exec(); // Start the event loop and wait
+}
+
 // Update button content and style
 void ultimateGame::updateButton(QPushButton* button, int &turnCounter) {
     if (button->text().isEmpty()) {
@@ -72,10 +79,10 @@ void ultimateGame::updateButton(QPushButton* button, int &turnCounter) {
         flag2 = true;
         if (turnCounter % 2 == 0) {
             button->setText("O");
-            button->setStyleSheet("color: rgb(86, 143, 151); font-size: 25px; font-weight: bold; background-color: rgb(155, 90, 215);padding: 0;");
+            button->setStyleSheet("color: #000; font-size: 25px; font-weight: bold; background-color: rgb(81, 220, 224);padding: 0;");
         } else {
             button->setText("X");
-            button->setStyleSheet("color: rgb(155, 90, 215); font-size: 25px; font-weight: bold; background-color: rgb(86, 143, 151);padding: 0;");
+            button->setStyleSheet("color: #000; font-size: 25px; font-weight: bold; background-color: #cbbf7a;padding: 0;");
         }
         checkGameState();
     }
@@ -304,7 +311,6 @@ bool ultimateGame::isWinBig() {
                     QPushButton* button = this->findChild<QPushButton*>(buttonName);
                     if (button) {
                         button->setEnabled(false);
-                        button->setStyleSheet("background-color: rgba(46, 4, 71, 255); color: #fff; font-size: 20px; font-weight: bold; padding : 0;");
                     }
                 }
             }
@@ -322,7 +328,8 @@ bool ultimateGame::isWinBig() {
                     QPushButton* button = this->findChild<QPushButton*>(buttonName);
                     if (button) {
                         button->setEnabled(false);
-                        button->setStyleSheet("background-color: rgba(46, 4, 71, 255); color: #fff; font-size: 20px; font-weight: bold; padding : 0;");
+                        if(winner == "X") button->setStyleSheet("background-color: #cbbf7a; color: #fff; font-size: 20px; font-weight: bold; padding : 0;");
+                        else button->setStyleSheet("background-color: rgb(81, 220, 224); color: #fff; font-size: 20px; font-weight: bold; padding : 0;");
                     }
                 }
             }
@@ -343,6 +350,7 @@ void ultimateGame::checkGameState() {
         QString winner = checkBigBoardWinner().second == 'X' ? ui->ScoreX->text() + " Wins!" : ui->ScoreO->text() + " Wins!";
         win->setWinnerText(winner);
         win->setAttribute(Qt::WA_DeleteOnClose);
+
         win->showFullScreen();
         for (int row = 1; row <= 9; ++row) {
             for (int col = 1; col <= 9; ++col) {
@@ -360,6 +368,7 @@ void ultimateGame::checkGameState() {
         draw = new Draw(this);
         draw->setWindowTitle("Draw!");
         draw->setAttribute(Qt::WA_DeleteOnClose);
+
         draw->showFullScreen();
         return;
     }
@@ -400,6 +409,9 @@ void ultimateGame::random() {
     // Select a random button
     int randomIndex = dist(gen);
     QPushButton *selectedButton = emptyButtons[randomIndex];
+
+    // Delay for seconds
+    delay2(100);
 
     // Update the button
     updateButton(selectedButton, n2);

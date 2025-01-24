@@ -6,6 +6,8 @@
 #include <QDebug>
 #include <cstdlib>
 #include <ctime>
+#include <QEventLoop>
+#include <QTimer>
 
 int n = 0; // Turn counter
 int scoreS = 0; // Player S score
@@ -40,6 +42,12 @@ susGame::~susGame() {
     delete ui;
 }
 
+void delay(int milliseconds) {
+    QEventLoop loop;
+    QTimer::singleShot(milliseconds, &loop, &QEventLoop::quit);
+    loop.exec(); // Start the event loop and wait
+}
+
 // Update button content and style
 void susGame::updateButton(QPushButton *button, int &turnCounter) {
     if (button->text().isEmpty()) {
@@ -47,10 +55,10 @@ void susGame::updateButton(QPushButton *button, int &turnCounter) {
         flag = true;
         if (turnCounter % 2 != 1) {
             button->setText("U");
-            button->setStyleSheet("color: rgb(86, 143, 151); font-size: 50px; font-weight: bold; background-color: rgb(155, 90, 215);");
+            button->setStyleSheet("color: #000; font-size: 50px; font-weight: bold; background-color: rgb(81, 220, 224);");
         } else {
             button->setText("S");
-            button->setStyleSheet("color: rgb(155, 90, 215); font-size: 50px; font-weight: bold; background-color: rgb(86, 143, 151);");
+            button->setStyleSheet("color: #000; font-size: 50px; font-weight: bold; background-color: #cbbf7a;");
         }
     }
 }
@@ -141,6 +149,7 @@ bool susGame::isWin() {
         QString winner = (scoreS > scoreU) ? ui->ScoreS->text() + " Wins!" : ui->ScoreU->text() + " Wins!";
         win->setWinnerText(winner);
         win->setAttribute(Qt::WA_DeleteOnClose);
+
         win->showFullScreen();
         return true;
     }
@@ -154,6 +163,7 @@ bool susGame::isDraw() {
         draw = new Draw(this);
         draw->setWindowTitle("Draw!");
         draw->setAttribute(Qt::WA_DeleteOnClose);
+
         draw->showFullScreen();
         return true;
     }
@@ -194,6 +204,10 @@ void susGame::random() {
     // Select random button and update it
     int randomIndex = rand() % emptyButtons.size();
     QPushButton *selectedButton = emptyButtons[randomIndex];
+
+    // Delay for seconds
+    delay(100);
+
     updateButton(selectedButton, n);
     checkGameState();
 }

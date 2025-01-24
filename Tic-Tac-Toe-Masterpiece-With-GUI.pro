@@ -10,40 +10,49 @@ CONFIG += c++17
 
 SOURCES += \
     creditswindow.cpp \
+    help_pyramid.cpp \
     help_sus.cpp \
     help_ultimate.cpp \
     helpwindow.cpp \
     main.cpp \
     mainwindow.cpp \
-    manuwindow.cpp \
+    menuwindow.cpp \
+    pyramidgame.cpp \
     susgame.cpp \
     ultimategame.cpp \
     win.cpp \
-    draw.cpp
+    draw.cpp \
+    wordgame.cpp
 
 HEADERS += \
     creditswindow.h \
+    help_pyramid.h \
     help_sus.h \
     help_ultimate.h \
     helpwindow.h \
     mainwindow.h \
-    manuwindow.h \
+    menuwindow.h \
+    pyramidgame.h \
     susgame.h \
     ultimategame.h \
     win.h \
-    draw.h
+    draw.h \
+    wordgame.h
 
 FORMS += \
     creditswindow.ui \
+    help_pyramid.ui \
     help_sus.ui \
     help_ultimate.ui \
     helpwindow.ui \
     mainwindow.ui \
-    manuwindow.ui \
+    menuwindow.ui \
+    pyramidgame.ui \
     susgame.ui \
     ultimategame.ui \
     win.ui \
-    draw.ui
+    draw.ui \
+    wordgame.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

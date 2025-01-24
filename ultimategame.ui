@@ -21,13 +21,18 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
-	background: qlineargradient(
-    spread:pad, 
-    x1:0, y1:0, 
-    x2:1, y2:0, 
-    stop:0 rgb(155, 90, 215),
-	stop:1 rgb(86, 143, 151));
-}</string>
+background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,x3:1,y3:1
+
+,stop:0 #cbbf7a
+,stop:0.2 #cbbf7a
+,stop:0.47  rgb(81, 220, 224)
+,stop:0.53  rgb(81, 220, 224)
+,stop:0.8 #cbbf7a
+, stop:1 #cbbf7a
+
+);
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -61,7 +66,7 @@
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: white;</string>
+            <string notr="true">color: rgb(0, 0, 0);</string>
            </property>
            <property name="text">
             <string>Ultimate Tic Tac Toe</string>
@@ -89,7 +94,7 @@
                </size>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(46, 4, 71, 255);
+               <string notr="true">background-color: #cbbf7a;
 color:rgb(0,0,0);</string>
               </property>
               <property name="frameShape">
@@ -129,8 +134,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -146,7 +159,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -162,8 +184,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -179,7 +209,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -195,7 +234,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -211,7 +259,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -227,8 +284,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -244,7 +309,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -260,8 +334,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -277,7 +359,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -293,8 +384,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -310,7 +409,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -326,7 +434,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -342,7 +459,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -358,7 +484,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -374,7 +509,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -390,8 +534,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -407,7 +559,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -423,8 +584,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -440,7 +609,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -456,8 +634,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -473,7 +659,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -489,7 +684,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -505,7 +709,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -521,8 +734,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -538,7 +759,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -554,8 +784,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -571,7 +809,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -587,7 +834,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -603,7 +859,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -619,8 +884,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -636,7 +909,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -652,8 +934,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -669,7 +959,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -685,7 +984,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -701,7 +1009,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -717,7 +1034,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -733,7 +1059,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -749,7 +1084,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -765,7 +1109,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -781,8 +1134,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -798,7 +1159,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -814,7 +1184,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -830,7 +1209,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -846,7 +1234,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -862,7 +1259,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -878,7 +1284,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -894,7 +1309,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -910,8 +1334,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -927,7 +1359,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -943,8 +1384,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -960,7 +1409,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -976,7 +1434,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -992,7 +1459,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1008,8 +1484,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1025,7 +1509,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1041,8 +1534,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1058,7 +1559,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1074,7 +1584,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1090,7 +1609,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1106,8 +1634,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1123,7 +1659,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1139,8 +1684,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1156,7 +1709,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1172,8 +1734,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1189,7 +1759,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1205,7 +1784,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1221,7 +1809,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1237,7 +1834,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1253,7 +1859,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1269,8 +1884,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1286,7 +1909,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1302,8 +1934,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1319,7 +1959,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1335,8 +1984,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1352,7 +2009,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1368,7 +2034,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1384,7 +2059,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:rgb(0,0,0);</string>
+                  <string notr="true">QPushButton{
+background-color: #000;
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1400,8 +2084,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1417,7 +2109,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1433,8 +2134,16 @@ color:rgb(0,0,0);</string>
                   </sizepolicy>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color:#fff
-;</string>
+                  <string notr="true">QPushButton{
+background-color:rgb(81, 81, 81);
+font: 700  &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+}
+
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -1477,7 +2186,7 @@ color:rgb(0,0,0);</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: white;</string>
+                     <string notr="true">color: #000;</string>
                     </property>
                     <property name="frameShape">
                      <enum>QFrame::Shape::NoFrame</enum>
@@ -1511,7 +2220,7 @@ color:rgb(0,0,0);</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: white;</string>
+                     <string notr="true">color: #000;</string>
                     </property>
                     <property name="frameShape">
                      <enum>QFrame::Shape::NoFrame</enum>
@@ -1541,6 +2250,7 @@ color:rgb(0,0,0);</string>
                  <property name="font">
                   <font>
                    <pointsize>20</pointsize>
+                   <italic>true</italic>
                    <bold>true</bold>
                   </font>
                  </property>
@@ -1549,21 +2259,20 @@ color:rgb(0,0,0);</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QPushButton {
-	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
-	stop:0 #c8b6ff
-	stop:1 #7ccbd6);
-	
-    color: #000; 
+background: #cbbf7a;
+    color: #000000; 
     border: 2px solid rgb(0,0,0) ;
     border-radius: 20px;
     padding: 5px;
 }
 
 QPushButton:hover {
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
-	stop:0  rgb(72, 149, 239)
-	stop:1  rgb(64, 41, 143));
-    color: #ffffff; 
+
+background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0 #000,
+	stop:0.5 #52a5e9 ,
+	stop:1 #000 ); 
+	color: white;
 }</string>
                  </property>
                  <property name="text">
@@ -1576,6 +2285,7 @@ QPushButton:hover {
                  <property name="font">
                   <font>
                    <pointsize>20</pointsize>
+                   <italic>true</italic>
                    <bold>true</bold>
                   </font>
                  </property>
@@ -1587,21 +2297,20 @@ QPushButton:hover {
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QPushButton {
-	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
-	stop:1 #c8b6ff
-	stop:0 #7ccbd6);
-	
-    color: #000; 
+background: #cbbf7a;
+    color: #000000; 
     border: 2px solid rgb(0,0,0) ;
     border-radius: 20px;
     padding: 5px;
 }
 
 QPushButton:hover {
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
-	stop:0  rgb(72, 149, 239)
-	stop:1  rgb(64, 41, 143));
-    color: #ffffff; 
+
+background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0 #000,
+	stop:0.5 rgb(236, 87, 102) ,
+	stop:1 #000 ); 
+	color: white;
 }</string>
                  </property>
                  <property name="text">

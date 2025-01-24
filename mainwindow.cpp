@@ -1,9 +1,9 @@
 #include "mainwindow.h"
 #include "helpwindow.h"
 #include "creditswindow.h"
-#include "manuwindow.h"
+#include "menuwindow.h"
 #include "ui_mainwindow.h"
-#include "manuwindow.h"
+#include "menuwindow.h"
 #include <QIcon>
 #include <QMessageBox>
 

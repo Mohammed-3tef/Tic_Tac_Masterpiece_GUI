@@ -1,7 +1,5 @@
 #include "help_ultimate.h"
 #include "ui_help_ultimate.h"
-#include "ultimategame.h"
-#include "ui_ultimategame.h"
 
 Help_Ultimate::Help_Ultimate(QWidget *parent)
     : QMainWindow(parent)

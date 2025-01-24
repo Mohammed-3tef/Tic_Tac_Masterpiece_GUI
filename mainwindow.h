@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include "helpwindow.h"
 #include "creditswindow.h"
-#include "manuwindow.h"
+#include "menuwindow.h"
 
 namespace Ui {
 class MainWindow;

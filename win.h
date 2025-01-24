@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QLabel>
+#include <QMovie> // Add this for GIF handling
+
 
 namespace Ui {
 class Win;
@@ -28,6 +30,7 @@ private slots:
 
 private:
     Ui::Win *ui;
+    QMovie *gifMovie;
 };
 
 #endif // WIN_H

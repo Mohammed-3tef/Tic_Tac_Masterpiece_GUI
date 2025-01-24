@@ -15,13 +15,18 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
-	background: qlineargradient(
-    spread:pad, 
-    x1:0, y1:0, 
-    x2:1, y2:0, 
-    stop:0 rgb(155, 90, 215),
-	stop:1 rgb(86, 143, 151));
-}</string>
+background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,x3:1,y3:1
+
+,stop:0 #cbbf7a
+,stop:0.2 #cbbf7a
+,stop:0.47  rgb(81, 220, 224)
+,stop:0.53  rgb(81, 220, 224)
+,stop:0.8 #cbbf7a
+, stop:1 #cbbf7a
+
+);
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QScrollArea" name="scrollArea">
@@ -62,6 +67,53 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;SUS Tic Tac Toe&lt;/span&gt;&lt;/h1&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:15px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;The SUS game is a simple game played on a 3x3 grid. The objective is to form the sequence &amp;quot;S-U-S&amp;quot; by placing letters in the grid. Players must carefully plan their moves to create as many SUS sequences as possible while blocking their opponent from doing the same. &lt;/span&gt;&lt;/p&gt;
+&lt;h2 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Rules&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:15px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;The goal is to create the sequence &amp;quot;S-U-S&amp;quot; in a straight line, which can be achieved diagonally, horizontally, or vertically. Players take turns placing either an &amp;quot;S&amp;quot; or a &amp;quot;U&amp;quot; in any empty square on the grid. A player must use the same letter for each turn. If a player successfully creates an &amp;quot;S-U-S&amp;quot; sequence, they take a point. &lt;/span&gt;&lt;/p&gt;
+&lt;h2 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Winning&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/Img/SUS.jpeg&quot; style=&quot;max-width:90%;&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:15px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;The game continues until all squares are filled or no more &amp;quot;S-U-S&amp;quot; sequences can be created. The player who creates the most &amp;quot;S-U-S&amp;quot; sequences wins the game. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>520</y>
+        <width>761</width>
+        <height>473</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>759</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <widget class="QTextBrowser" name="textBrowser_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>741</width>
+          <height>453</height>
+         </rect>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;h1 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;SUS &lt;/span&gt;&lt;/h1&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:15px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;The SUS game is a simple game played on a 3x3 grid. The objective is to form the sequence &amp;quot;S-U-S&amp;quot; by placing letters in the grid. Players must carefully plan their moves to create as many SUS sequences as possible while blocking their opponent from doing the same. &lt;/span&gt;&lt;/p&gt;
 &lt;h2 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Rules&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
@@ -69,6 +121,80 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;h2 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Winning&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/Img/SUS.jpeg&quot; style=&quot;max-width:90%;&quot; /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:15px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;The game continues until all squares are filled or no more &amp;quot;S-U-S&amp;quot; sequences can be created. The player who creates the most &amp;quot;S-U-S&amp;quot; sequences wins the game. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="backPtn_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>1000</y>
+        <width>782</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	margin-right: 200%;
+	margin-left: 200%;
+	background: #cbbf7a;
+	
+    color: #000; 
+    border: 2px solid rgb(0,0,0) ;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+   background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0 #000,
+	stop:0.5 #52a5e9 ,
+	stop:1 #000 ); 
+    color: #ffffff; 
+}</string>
+      </property>
+      <property name="text">
+       <string>I Understood</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>470</y>
+        <width>782</width>
+        <height>47</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;</string>
+      </property>
+      <property name="text">
+       <string>Tic Tac Masterpiece</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -90,7 +216,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: white;</string>
+     <string notr="true">color: #000;</string>
     </property>
     <property name="text">
      <string>Tic Tac Masterpiece</string>
@@ -125,9 +251,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string notr="true">QPushButton {
 	margin-right: 200%;
 	margin-left: 200%;
-	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,  
-	stop:1 #c8b6ff
-	stop:0 #7ccbd6);
+	background: #cbbf7a;
 	
     color: #000; 
     border: 2px solid rgb(0,0,0) ;
@@ -136,9 +260,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
 }
 
 QPushButton:hover {
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
-	stop:0  rgb(72, 149, 239)
-	stop:1  rgb(64, 41, 143));
+   background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+	stop:0 #000,
+	stop:0.5 #52a5e9 ,
+	stop:1 #000 ); 
     color: #ffffff; 
 }</string>
     </property>

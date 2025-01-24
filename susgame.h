@@ -22,7 +22,6 @@ public:
     bool isWin();
     bool isDraw();
     bool gameIsOver();
-    void run();
     bool isPattern(const QString& a, const QString& b, const QString& c);
     void checkGameState();
     void random();
