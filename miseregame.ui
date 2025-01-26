@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>susGame</class>
+ <class>misereGame</class>
  <widget class="QMainWindow" name="misereGame">
   <property name="geometry">
    <rect>
