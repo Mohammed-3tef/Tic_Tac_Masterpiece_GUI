@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     creditswindow.cpp \
+    help_numerical.cpp \
     help_pyramid.cpp \
     help_sus.cpp \
     help_ultimate.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     menuwindow.cpp \
+    numericalgame.cpp \
     pyramidgame.cpp \
     susgame.cpp \
     ultimategame.cpp \
@@ -27,6 +29,7 @@ SOURCES += \
 
 HEADERS += \
     creditswindow.h \
+    help_numerical.h \
     help_pyramid.h \
     help_sus.h \
     help_ultimate.h \
@@ -34,6 +37,7 @@ HEADERS += \
     helpwindow.h \
     mainwindow.h \
     menuwindow.h \
+    numericalgame.h \
     pyramidgame.h \
     susgame.h \
     ultimategame.h \
@@ -43,6 +47,7 @@ HEADERS += \
 
 FORMS += \
     creditswindow.ui \
+    help_numerical.ui \
     help_pyramid.ui \
     help_sus.ui \
     help_ultimate.ui \
@@ -50,6 +55,7 @@ FORMS += \
     helpwindow.ui \
     mainwindow.ui \
     menuwindow.ui \
+    numericalgame.ui \
     pyramidgame.ui \
     susgame.ui \
     ultimategame.ui \

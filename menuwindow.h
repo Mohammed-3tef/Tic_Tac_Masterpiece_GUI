@@ -6,7 +6,7 @@
 #include "susgame.h"
 #include "pyramidgame.h"
 #include "wordgame.h"
-// #include "numericalgame.h"
+#include "numericalgame.h"
 // #include "fourgame.h"
 
 namespace Ui {
@@ -39,7 +39,7 @@ private:
     susGame *susgame;
     pyramidGame *pyramidgame;
     wordGame *wordgame;
-    // numericalGame *numericalgame;
+    numericalGame *numericalgame;
     // fourGame *fourgame;
 };
 
