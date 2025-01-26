@@ -13,6 +13,7 @@ SOURCES += \
     help_pyramid.cpp \
     help_sus.cpp \
     help_ultimate.cpp \
+    help_word.cpp \
     helpwindow.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     help_pyramid.h \
     help_sus.h \
     help_ultimate.h \
+    help_word.h \
     helpwindow.h \
     mainwindow.h \
     menuwindow.h \
@@ -44,6 +46,7 @@ FORMS += \
     help_pyramid.ui \
     help_sus.ui \
     help_ultimate.ui \
+    help_word.ui \
     helpwindow.ui \
     mainwindow.ui \
     menuwindow.ui \

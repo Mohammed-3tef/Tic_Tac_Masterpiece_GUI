@@ -16,8 +16,6 @@ public:
     ~Help_SUS();
 
 private slots:
-    void on_pushButton_clicked();
-
     void on_backPtn_clicked();
 
 private:

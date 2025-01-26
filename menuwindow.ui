@@ -136,7 +136,7 @@ QRadioButton:hover { color: #fff; }QRadioButton::indicator {
            </widget>
           </item>
           <item row="0" column="5">
-           <widget class="QRadioButton" name="radioButton_4">
+           <widget class="QRadioButton" name="misereGameChoice">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -176,7 +176,7 @@ QRadioButton:hover { color: #fff; }QRadioButton::indicator {
            </widget>
           </item>
           <item row="0" column="0">
-           <widget class="QRadioButton" name="radioButton_2">
+           <widget class="QRadioButton" name="numericalGameChoice">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -216,7 +216,7 @@ QRadioButton:hover { color: #fff; }QRadioButton::indicator {
            </widget>
           </item>
           <item row="0" column="3">
-           <widget class="QRadioButton" name="radioButton">
+           <widget class="QRadioButton" name="wordGameChoice">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -296,7 +296,7 @@ QRadioButton:hover { color: #fff; }QRadioButton::indicator {
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QRadioButton" name="radioButton_6">
+           <widget class="QRadioButton" name="fourGameChoice">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -336,7 +336,7 @@ QRadioButton:hover { color: #fff; }QRadioButton::indicator {
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QRadioButton" name="radioButton_5">
+           <widget class="QRadioButton" name="fiveGameChoice">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>

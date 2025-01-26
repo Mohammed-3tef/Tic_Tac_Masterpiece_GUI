@@ -124,6 +124,7 @@ bool pyramidGame::isWin() {
         ui->x33_2->setDisabled(ui->x33_2);
         ui->x34_2->setDisabled(ui->x34_2);
         ui->x35_2->setDisabled(ui->x35_2);
+
         win = new Win(this);
         QString winner = (n3 % 2 == 1) ? ui->ScoreX_2->text() + " Wins!" : ui->ScoreO_2->text() + " Wins!";
         win->setWinnerText(winner);
@@ -139,6 +140,16 @@ bool pyramidGame::isWin() {
 // Check draw condition
 bool pyramidGame::isDraw() {
     if (n3 == 9 && !isWin()) {
+        ui->x13_2->setDisabled(ui->x13_2);
+        ui->x22_2->setDisabled(ui->x22_2);
+        ui->x23_2->setDisabled(ui->x23_2);
+        ui->x24_2->setDisabled(ui->x24_2);
+        ui->x31_2->setDisabled(ui->x31_2);
+        ui->x32_2->setDisabled(ui->x32_2);
+        ui->x33_2->setDisabled(ui->x33_2);
+        ui->x34_2->setDisabled(ui->x34_2);
+        ui->x35_2->setDisabled(ui->x35_2);
+
         draw = new Draw(this);
         draw->setWindowTitle("Draw!");
         draw->setAttribute(Qt::WA_DeleteOnClose);

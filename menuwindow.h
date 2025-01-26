@@ -5,6 +5,9 @@
 #include "ultimategame.h"
 #include "susgame.h"
 #include "pyramidgame.h"
+#include "wordgame.h"
+// #include "numericalgame.h"
+// #include "fourgame.h"
 
 namespace Ui {
 class ManuWindow;
@@ -35,6 +38,9 @@ private:
     ultimateGame *ultimategame;
     susGame *susgame;
     pyramidGame *pyramidgame;
+    wordGame *wordgame;
+    // numericalGame *numericalgame;
+    // fourGame *fourgame;
 };
 
 #endif // MENUWINDOW_H

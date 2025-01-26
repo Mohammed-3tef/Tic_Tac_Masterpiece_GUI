@@ -3,6 +3,9 @@
 #include "ui_menuwindow.h"
 #include "susgame.h"
 #include "pyramidgame.h"
+#include "wordgame.h"
+// #include "numericalgame.h"
+// #include "fourgame.h"
 #include "QMessageBox"
 #include <QIcon>
 
@@ -17,6 +20,10 @@ ManuWindow::ManuWindow(QWidget *parent)
     ui->twoPlayerChoice->setChecked(false);
     ui->susGameChoice->setChecked(false);
     ui->ultimateGameChoice->setChecked(false);
+    ui->pyramidGameChoice->setChecked(false);
+    ui->wordGameChoice->setChecked(false);
+    // ui->numericalGameChoice->setChecked(false);
+    // ui->fourGameChoice->setChecked(false);
     ui->firstInput->setEnabled(false);
     ui->secondInput->setEnabled(false);
 }
@@ -26,6 +33,10 @@ ManuWindow::~ManuWindow()
     delete ui;
     delete ultimategame;
     delete susgame;
+    delete pyramidgame;
+    delete wordgame;
+    // delete numericalgame;
+    // delete fourgame;
 }
 
 void ManuWindow::on_manuBackBtn_clicked()
@@ -43,7 +54,7 @@ void ManuWindow::on_nextBtn_clicked()
     }
 
     // Check if a game mode is selected
-    if (!ui->susGameChoice->isChecked() && !ui->ultimateGameChoice->isChecked() && !ui->pyramidGameChoice->isChecked()) {
+    if (!ui->susGameChoice->isChecked() && !ui->ultimateGameChoice->isChecked() && !ui->pyramidGameChoice->isChecked() && !ui->wordGameChoice->isChecked()) {
         QMessageBox::warning(this, "Selection Missing", "Please select a game mode!");
         return;
     }
@@ -85,6 +96,27 @@ void ManuWindow::on_nextBtn_clicked()
         QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
         pyramidgame = new pyramidGame(this, firstPlayer, secondPlayer);
         pyramidgame->showFullScreen();
+    }
+
+    if (ui->wordGameChoice->isChecked()) {
+        QString firstPlayer = ui->firstInput->text();
+        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
+        wordgame = new wordGame(this, firstPlayer, secondPlayer);
+        wordgame->showFullScreen();
+    }
+
+    if (ui->numericalGameChoice->isChecked()) {
+        QString firstPlayer = ui->firstInput->text();
+        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
+        // numericalgame = new numericalGame(this, firstPlayer, secondPlayer);
+        // numericalgame->showFullScreen();
+    }
+
+    if (ui->fourGameChoice->isChecked()) {
+        QString firstPlayer = ui->firstInput->text();
+        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
+        // fourgame = new fourGame(this, firstPlayer, secondPlayer);
+        // fourgame->showFullScreen();
     }
 }
 
