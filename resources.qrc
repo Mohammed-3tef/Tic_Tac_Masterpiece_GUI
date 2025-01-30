@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icons"/>
+    <qresource prefix="/">
+        <file>Img/tic-tac-toe-icon.ico</file>
+        <file>Img/SUS.jpeg</file>
+        <file>Img/UltimateTicTacToe.jpeg</file>
+        <file>Img/pyramid.jpeg</file>
+        <file>Img/numerical.png</file>
+        <file>Img/fourInARow.png</file>
+        <file>Img/word.png</file>
+    </qresource>
+</RCC>
