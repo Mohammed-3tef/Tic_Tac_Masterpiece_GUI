@@ -59,6 +59,36 @@ numericalGame::~numericalGame(){
     delete ui;
 }
 
+// Help button
+void numericalGame::on_helpButton_clicked() {
+    helpNumerical = new Help_Numerical(this);
+    helpNumerical->setAttribute(Qt::WA_DeleteOnClose);
+    helpNumerical->show();
+}
+
+// Exit button
+void numericalGame::on_exitButton_clicked() {
+    numerical = 0;
+
+    // Reset all buttons
+    QList<QPushButton *> buttons = {ui->x11, ui->x12, ui->x13,
+                                    ui->x21, ui->x22, ui->x23,
+                                    ui->x31, ui->x32, ui->x33};
+    for (auto button : buttons) {
+        button->setText("");
+        button->setEnabled(true);
+    }
+
+    emit backToManuWindow();
+    this->close();
+}
+
+void numericalDelay(int milliseconds) {
+    QEventLoop loop;
+    QTimer::singleShot(milliseconds, &loop, &QEventLoop::quit);
+    loop.exec(); // Start the event loop and wait
+}
+
 void numericalGame::on_xx0_clicked(){
     numericalChar = '0';
     if (!numericalFlag) {
@@ -180,36 +210,6 @@ void numericalGame::on_xx9_clicked(){
     }
 }
 
-// Help button
-void numericalGame::on_helpButton_clicked() {
-    helpNumerical = new Help_Numerical(this);
-    helpNumerical->setAttribute(Qt::WA_DeleteOnClose);
-    helpNumerical->show();
-}
-
-// Exit button
-void numericalGame::on_exitButton_clicked() {
-    numerical = 0;
-
-    // Reset all buttons
-    QList<QPushButton *> buttons = {ui->x11, ui->x12, ui->x13,
-                                    ui->x21, ui->x22, ui->x23,
-                                    ui->x31, ui->x32, ui->x33};
-    for (auto button : buttons) {
-        button->setText("");
-        button->setEnabled(true);
-    }
-
-    emit backToManuWindow();
-    this->close();
-}
-
-void numericalDelay(int milliseconds) {
-    QEventLoop loop;
-    QTimer::singleShot(milliseconds, &loop, &QEventLoop::quit);
-    loop.exec(); // Start the event loop and wait
-}
-
 void numericalGame::regular(){
     ui->xx0->setStyleSheet("color: #000;");
     ui->xx1->setStyleSheet("color: #000;");
@@ -228,7 +228,7 @@ void numericalGame::updateButton(QPushButton *button, int &turnCounter, char c) 
     if (button->text().isEmpty()) {
         turnCounter++;
         numericalChar = ' ';
-        // numericalFlag = true;
+        numericalFlag = !numericalFlag;
         QString selectedNum(1, c); // Convert char to QString
 
         if (turnCounter % 2 != 1) {
@@ -284,8 +284,6 @@ void numericalGame::random() {
 
     updateButton(selectedButton, numerical, selectedNum);
     secondPlayer.erase(secondPlayer.begin() +rIndex);
-
-    numericalFlag = !numericalFlag;
 
     if (ui->xx0->text() == QString(selectedNum)) ui->xx0->setEnabled(false);
     else if (ui->xx1->text() == QString(selectedNum)) ui->xx1->setEnabled(false);
@@ -395,11 +393,10 @@ void numericalGame::checkGameState() {
     }
 
     // Handle computer player
-    if (!numericalFlag && numerical % 2 == 1 && ui->Score2->text() == "Random Player") {
+    if (numericalFlag && numerical % 2 == 1 && ui->Score2->text() == "Random Player") {
         random();
         checkGameState();
     }
-    numericalFlag = true;
 }
 
 // Optimized Button click handler
@@ -409,11 +406,10 @@ void numericalGame::handleButtonClick(QPushButton *button) {
             updateButton(button, numerical, numericalChar);
             regular();
             checkGameState();
-
-            numericalFlag = !numericalFlag;
         }
     }
 }
+
 // Now, each button click handler simply calls the optimized function
 void numericalGame::on_x11_clicked() { handleButtonClick(ui->x11); }
 void numericalGame::on_x12_clicked() { handleButtonClick(ui->x12); }
