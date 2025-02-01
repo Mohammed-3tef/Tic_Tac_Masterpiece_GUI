@@ -18,16 +18,14 @@ public:
     explicit misereGame(QWidget *parent = nullptr, const QString &firstPlayer = "", const QString &secondPlayer = "");
     ~misereGame();
     void updateButton(QPushButton* button, int &turnCounter);
-    bool isWin();
+    bool isLose();
     bool isDraw();
     bool gameIsOver();
     void checkGameState();
     void random();
-    int count_three();
     bool isPattern(const QString& a, const QString& b, const QString& c);
 
 private slots:
-    void on_helpButton_clicked();
     void on_exitButton_clicked();
 
     void on_x11_clicked();
@@ -49,6 +47,8 @@ private:
     QPushButton *lastClickedButton;
     Win *win;
     Draw *draw;
+    int turnCounter = 0; // Turn counter
+    bool flag = false; // Flag for random player
 };
 
-#endif 
+#endif
