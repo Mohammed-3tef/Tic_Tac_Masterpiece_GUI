@@ -25,8 +25,8 @@ fivebyfiveGame::fivebyfiveGame(QWidget *parent, const QString &firstPlayer, cons
     // Set initial UI states
     ui->ScoreX->setText(firstPlayer);
     ui->ScoreO->setText(secondPlayer);
-    ui->XX->setText("0");
-    ui->OO->setText("0");
+    //ui->XX->setText("0");
+    //ui->OO->setText("0");
 }
 
 // Destructor
@@ -122,8 +122,8 @@ bool fivebyfiveGame::isWin() {
     scoreX = countX;
     scoreO = countO;
 
-    ui->XX->setText(QString::number(scoreX));
-    ui->OO->setText(QString::number(scoreO));
+   // ui->XX->setText(QString::number(scoreX));
+   // ui->OO->setText(QString::number(scoreO));
 
     if (turnCounter == 24) { // Game ends after 24 moves
         if (scoreX > scoreO) {
@@ -213,8 +213,8 @@ void fivebyfiveGame::on_exitButton_clicked() {
         }
     }
 
-    ui->XX->setText("0");
-    ui->OO->setText("0");
+    //ui->XX->setText("0");
+   // ui->OO->setText("0");
 
     emit backToManuWindow();
     this->close();
