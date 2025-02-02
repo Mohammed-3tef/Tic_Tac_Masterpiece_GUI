@@ -5,6 +5,8 @@
 #include "../include/wordgame.h"
 #include "../include/numericalgame.h"
 #include "../include/fourgame.h"
+#include "../include/fivebyfivegame.h"
+#include "../include/miseregame.h"
 #include "ui_menuwindow.h"
 #include "QMessageBox"
 #include <QIcon>
@@ -24,6 +26,8 @@ ManuWindow::ManuWindow(QWidget *parent)
     ui->wordGameChoice->setChecked(false);
     ui->numericalGameChoice->setChecked(false);
     ui->fourGameChoice->setChecked(false);
+    ui->fiveGameChoice->setChecked(false);
+    ui->misereGameChoice->setChecked(false);
     ui->firstInput->setEnabled(false);
     ui->secondInput->setEnabled(false);
 }
@@ -37,6 +41,8 @@ ManuWindow::~ManuWindow()
     delete wordgame;
     delete numericalgame;
     delete fourgame;
+    delete fivebyfivegame;
+    delete miseregame;
 }
 
 void ManuWindow::on_manuBackBtn_clicked()
@@ -113,6 +119,19 @@ void ManuWindow::on_nextBtn_clicked()
     }
 
     if (ui->fourGameChoice->isChecked()) {
+        QString firstPlayer = ui->firstInput->text();
+        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
+        fourgame = new fourGame(this, firstPlayer, secondPlayer);
+        fourgame->showFullScreen();
+    }
+    if (ui->fiveGameChoice->isChecked()) {
+        QString firstPlayer = ui->firstInput->text();
+        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
+        fourgame = new fourGame(this, firstPlayer, secondPlayer);
+        fourgame->showFullScreen();
+    }
+
+    if (ui->misereGameChoice->isChecked()) {
         QString firstPlayer = ui->firstInput->text();
         QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
         fourgame = new fourGame(this, firstPlayer, secondPlayer);
