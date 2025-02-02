@@ -110,7 +110,7 @@ bool misereGame::isDraw() {
 void misereGame::checkGameState() {
     if (isLose()) {
         win = new Win(this);
-        QString loser = (turnCounter % 2 == 0) ? ui->ScoreX->text() + " Loses!" : ui->ScoreO->text() + " Loses!";
+        QString loser = (turnCounter % 2 == 0) ? ui->ScoreS->text() + " Loses!" : ui->ScoreU->text() + " Loses!";
         win->setWinnerText(loser);
         win->setAttribute(Qt::WA_DeleteOnClose);
         win->showFullScreen();
@@ -126,7 +126,7 @@ void misereGame::checkGameState() {
     }
 
     // Handle computer player
-    if (flag && turnCounter % 2 == 1 && ui->ScoreO->text() == "Random Player") {
+    if (flag && turnCounter % 2 == 1 && ui->ScoreU->text() == "Random Player") {
         random();
         checkGameState();
     }
