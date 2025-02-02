@@ -23,8 +23,8 @@ misereGame::misereGame(QWidget *parent, const QString &firstPlayer, const QStrin
     srand(static_cast<unsigned int>(time(nullptr)));
 
     // Set initial UI states
-    ui->ScoreX->setText(firstPlayer);
-    ui->ScoreO->setText(secondPlayer);
+    ui->ScoreS->setText(firstPlayer);
+    ui->ScoreU->setText(secondPlayer);
 }
 
 // Destructor
@@ -35,7 +35,7 @@ misereGame::~misereGame() {
     delete ui;
 }
 
-void delay(int milliseconds) {
+void delaymisere(int milliseconds) {
     QEventLoop loop;
     QTimer::singleShot(milliseconds, &loop, &QEventLoop::quit);
     loop.exec(); // Start the event loop and wait
@@ -154,7 +154,7 @@ void misereGame::random() {
     QPushButton *selectedButton = emptyButtons[randomIndex];
 
     // Delay for seconds
-    delay(100);
+    delaymisere(100);
 
     updateButton(selectedButton, turnCounter);
     checkGameState();
