@@ -23,8 +23,8 @@ misereGame::misereGame(QWidget *parent, const QString &firstPlayer, const QStrin
     srand(static_cast<unsigned int>(time(nullptr)));
 
     // Set initial UI states
-    ui->ScoreS->setText(firstPlayer);
-    ui->ScoreU->setText(secondPlayer);
+    ui->ScoreX->setText(firstPlayer);
+    ui->ScoreO->setText(secondPlayer);
 }
 
 // Destructor
@@ -110,7 +110,7 @@ bool misereGame::isDraw() {
 void misereGame::checkGameState() {
     if (isLose()) {
         win = new Win(this);
-        QString loser = (turnCounter % 2 == 0) ? ui->ScoreS->text() + " Loses!" : ui->ScoreU->text() + " Loses!";
+        QString loser = (turnCounter % 2 == 0) ? ui->ScoreX->text() + " Loses!" : ui->ScoreO->text() + " Loses!";
         win->setWinnerText(loser);
         win->setAttribute(Qt::WA_DeleteOnClose);
         win->showFullScreen();
@@ -126,7 +126,7 @@ void misereGame::checkGameState() {
     }
 
     // Handle computer player
-    if (flag && turnCounter % 2 == 1 && ui->ScoreU->text() == "Random Player") {
+    if (flag && turnCounter % 2 == 1 && ui->ScoreX->text() == "Random Player") {
         random();
         checkGameState();
     }
