@@ -60,7 +60,7 @@ void ManuWindow::on_nextBtn_clicked()
     }
 
     // Check if a game mode is selected
-    if (!ui->susGameChoice->isChecked() && !ui->ultimateGameChoice->isChecked() && !ui->pyramidGameChoice->isChecked() && !ui->wordGameChoice->isChecked() && !ui->numericalGameChoice->isChecked() && !ui->fourGameChoice->isChecked()) {
+    if (!ui->susGameChoice->isChecked() && !ui->ultimateGameChoice->isChecked() && !ui->pyramidGameChoice->isChecked() && !ui->wordGameChoice->isChecked() && !ui->numericalGameChoice->isChecked() && !ui->fourGameChoice->isChecked() && !ui->misereGameChoice->isChecked() ) {
         QMessageBox::warning(this, "Selection Missing", "Please select a game mode!");
         return;
     }
@@ -131,11 +131,11 @@ void ManuWindow::on_nextBtn_clicked()
         fourgame->showFullScreen();
     }
 
-    if (ui->misereGameChoice->isChecked()) {
+   if (ui->misereGameChoice->isChecked()) {
         QString firstPlayer = ui->firstInput->text();
         QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
-        fourgame = new fourGame(this, firstPlayer, secondPlayer);
-        fourgame->showFullScreen();
+        miseregame = new misereGame(this, firstPlayer, secondPlayer); // Initialize miseregame
+        miseregame->showFullScreen();
     }
 }
 
