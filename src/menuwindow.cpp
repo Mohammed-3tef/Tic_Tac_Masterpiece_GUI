@@ -5,8 +5,6 @@
 #include "../include/wordgame.h"
 #include "../include/numericalgame.h"
 #include "../include/fourgame.h"
-#include "../include/fivebyfivegame.h"
-#include "../include/miseregame.h"
 #include "ui_menuwindow.h"
 #include "QMessageBox"
 #include <QIcon>
@@ -26,8 +24,6 @@ ManuWindow::ManuWindow(QWidget *parent)
     ui->wordGameChoice->setChecked(false);
     ui->numericalGameChoice->setChecked(false);
     ui->fourGameChoice->setChecked(false);
-    ui->fiveGameChoice->setChecked(false);
-    ui->misereGameChoice->setChecked(false);
     ui->firstInput->setEnabled(false);
     ui->secondInput->setEnabled(false);
 }
@@ -41,8 +37,7 @@ ManuWindow::~ManuWindow()
     delete wordgame;
     delete numericalgame;
     delete fourgame;
-    delete fivebyfivegame;
-    delete miseregame;
+   
 }
 
 void ManuWindow::on_manuBackBtn_clicked()
@@ -60,7 +55,7 @@ void ManuWindow::on_nextBtn_clicked()
     }
 
     // Check if a game mode is selected
-    if (!ui->susGameChoice->isChecked() && !ui->ultimateGameChoice->isChecked() && !ui->pyramidGameChoice->isChecked() && !ui->wordGameChoice->isChecked() && !ui->numericalGameChoice->isChecked() && !ui->fourGameChoice->isChecked() && !ui->misereGameChoice->isChecked() ) {
+    if (!ui->susGameChoice->isChecked() && !ui->ultimateGameChoice->isChecked() && !ui->pyramidGameChoice->isChecked() && !ui->wordGameChoice->isChecked() && !ui->numericalGameChoice->isChecked() && !ui->fourGameChoice->isChecked()  ) {
         QMessageBox::warning(this, "Selection Missing", "Please select a game mode!");
         return;
     }
@@ -123,19 +118,6 @@ void ManuWindow::on_nextBtn_clicked()
         QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
         fourgame = new fourGame(this, firstPlayer, secondPlayer);
         fourgame->showFullScreen();
-    }
-    if (ui->fiveGameChoice->isChecked()) {
-        QString firstPlayer = ui->firstInput->text();
-        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
-        fourgame = new fourGame(this, firstPlayer, secondPlayer);
-        fourgame->showFullScreen();
-    }
-
-   if (ui->misereGameChoice->isChecked()) {
-        QString firstPlayer = ui->firstInput->text();
-        QString secondPlayer = ui->twoPlayerChoice->isChecked() ? ui->secondInput->text() : "Random Player";
-        miseregame = new misereGame(this, firstPlayer, secondPlayer); // Initialize miseregame
-        miseregame->showFullScreen();
     }
 }
 
