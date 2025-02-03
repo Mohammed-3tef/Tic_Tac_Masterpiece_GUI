@@ -8,9 +8,6 @@
 #include "wordgame.h"
 #include "numericalgame.h"
 #include "fourgame.h"
-#include "fivebyfivegame.h"
-#include "miseregame.h"
-
 
 namespace Ui {
 class ManuWindow;
@@ -44,8 +41,7 @@ private:
     wordGame *wordgame;
     numericalGame *numericalgame;
     fourGame *fourgame;
-    fivebyfiveGame *fivebyfivegame;
-    misereGame *miseregame;
+    
 };
 
 #endif // MENUWINDOW_H
