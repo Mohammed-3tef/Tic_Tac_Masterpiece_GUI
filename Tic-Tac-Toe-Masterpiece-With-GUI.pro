@@ -27,8 +27,6 @@ SOURCES += \
     src/ultimategame.cpp \
     src/win.cpp \
     src/draw.cpp \
-    src/fivebyfivegame.cpp \
-    src/miseregame.cpp \
     src/wordgame.cpp
 
 HEADERS += \
@@ -49,8 +47,6 @@ HEADERS += \
     include/ultimategame.h \
     include/win.h \
     include/draw.h \
-    include/fivebyfivegame.h \
-    include/miseregame.h \
     include/wordgame.h
 
 FORMS += \
@@ -71,8 +67,6 @@ FORMS += \
     forms/ultimategame.ui \
     forms/win.ui \
     forms/draw.ui \
-    forms/miseregame.ui \
-    forms/fivebyfivegame.ui \
     forms/wordgame.ui
 
 # Default rules for deployment.
