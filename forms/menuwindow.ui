@@ -14,7 +14,7 @@
    <string>Tic Tac Masterpiece</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources.qrc">
+   <iconset resource="../resources.qrc">
     <normaloff>:/Img/tic-tac-toe-icon.ico</normaloff>:/Img/tic-tac-toe-icon.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -37,7 +37,7 @@
           </sizepolicy>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">color:#000;</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
           <property name="leftMargin">
@@ -55,126 +55,6 @@
           <property name="verticalSpacing">
            <number>5</number>
           </property>
-          <item row="2" column="5">
-           <widget class="QRadioButton" name="pyramidGameChoice">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>15</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>16</pointsize>
-              <italic>true</italic>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">
-QRadioButton:hover { color: #fff; }QRadioButton::indicator {
-    width: 0px;
-    height: 0px;
-    margin: 0; /* Ensure no leftover space where the indicator would be */
-    padding: 0;
-    border: none; /* Remove any borders if present */
-}QRadioButton:checked { color: #fff; }
-</string>
-            </property>
-            <property name="text">
-             <string>Pyramid Tic Tac Toe</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="3">
-           <widget class="QRadioButton" name="susGameChoice">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>15</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>16</pointsize>
-              <italic>true</italic>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">
-QRadioButton:hover { color: #fff; }QRadioButton::indicator {
-    width: 0px;
-    height: 0px;
-    margin: 0; /* Ensure no leftover space where the indicator would be */
-    padding: 0;
-    border: none; /* Remove any borders if present */
-}QRadioButton:checked { color: #fff; }
-</string>
-            </property>
-            <property name="text">
-             <string>SUS Tic Tac Toe</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="5">
-           <widget class="QRadioButton" name="misereGameChoice">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>15</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>16</pointsize>
-              <italic>true</italic>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">
-QRadioButton:hover { color: #fff; }QRadioButton::indicator {
-    width: 0px;
-    height: 0px;
-    margin: 0; /* Ensure no leftover space where the indicator would be */
-    padding: 0;
-    border: none; /* Remove any borders if present */
-}QRadioButton:checked { color: #fff; }
-</string>
-            </property>
-            <property name="text">
-             <string>Misere Tic Tac Toe</string>
-            </property>
-           </widget>
-          </item>
           <item row="0" column="0">
            <widget class="QRadioButton" name="numericalGameChoice">
             <property name="sizePolicy">
@@ -336,7 +216,7 @@ QRadioButton:hover { color: #fff; }QRadioButton::indicator {
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QRadioButton" name="fiveGameChoice">
+           <widget class="QRadioButton" name="susGameChoice">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -371,7 +251,47 @@ QRadioButton:hover { color: #fff; }QRadioButton::indicator {
 </string>
             </property>
             <property name="text">
-             <string>Five By Five</string>
+             <string>SUS Tic Tac Toe</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QRadioButton" name="pyramidGameChoice">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>16</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QRadioButton:hover { color: #fff; }QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+    margin: 0; /* Ensure no leftover space where the indicator would be */
+    padding: 0;
+    border: none; /* Remove any borders if present */
+}QRadioButton:checked { color: #fff; }
+</string>
+            </property>
+            <property name="text">
+             <string>Pyramid Tic Tac Toe</string>
             </property>
            </widget>
           </item>
@@ -891,7 +811,7 @@ background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
   </widget>
  </widget>
  <resources>
-  <include location="resources.qrc"/>
+  <include location="../resources.qrc"/>
  </resources>
  <connections/>
 </ui>
