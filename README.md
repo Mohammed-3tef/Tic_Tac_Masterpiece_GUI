@@ -12,11 +12,12 @@ A modern, interactive, and visually appealing implementation of the classic Tic 
 
 ## 🖥️ Watch the Demo
 
-https://github.com/user-attachments/assets/c93ab2b0-636f-47d8-9aa1-3b6df3d37e5d
+<video src="./Tic Tac Masterpiece.mp4" controls unmuted> </video>
+
 
 ## 📥 Download
 
-Get the latest version of **Tic Tac Toe Masterpiece with GUI**: [Download Here](https://github.com/NaghamProgrammer/Tic-Tac-Toe-Masterpiece-With-GUI/releases/latest) <br>
+Get the latest version of **Tic Tac Toe Masterpiece with GUI**: [Download Here](https://github.com/Mohammed-3tef/Tic-Tac-Toe-Masterpiece-With-GUI/releases/latest) <br>
 Visit the release page to download the precompiled binaries for your system. Extract the downloaded file and run the executable to start playing!
 
 
@@ -29,7 +30,7 @@ Visit the release page to download the precompiled binaries for your system. Ext
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/NaghamProgrammer/Tic-Tac-Toe-Masterpiece-With-GUI.git
+   git clone https://github.com/Mohammed-3tef/Tic-Tac-Toe-Masterpiece-With-GUI.git
    cd Tic_Tac_Toe_Masterpiece_With_GUI
    ```
 2. Open the project in **Qt Creator**.
@@ -78,7 +79,6 @@ Prefer the classic console-based experience? Check out the **Tic Tac Toe Masterp
 
 - **Esraa Emary Abd El-Salam**: [GitHub](https://github.com/esraa-emary) - [LinkedIn](https://www.linkedin.com/in/esraa-emary-b372b8303/)
 - **Mohammed Atef Abd El-Kader**: [GitHub](https://github.com/Mohammed-3tef) - [LinkedIn](https://www.linkedin.com/in/mohammed-atef-b0a408299/)
-- **Nagham Wael Mohammed El-Sayed**: [GitHub](https://github.com/NaghamProgrammer) - [LinkedIn](https://www.linkedin.com/in/nagham-wael-5aa70a318/)
 
 
 ## 📜 License
