@@ -1,4 +1,4 @@
-# Tic Tac Masterpiece with GUI 🎮
+# Tic Tac Masterpiece With GUI 🎮
 
 A modern, interactive, and visually appealing implementation of the classic Tic Tac Toe game with a graphical user interface (GUI). Play against a friend or challenge a random computer player to test your strategy and decision-making skills!
 
@@ -12,7 +12,8 @@ A modern, interactive, and visually appealing implementation of the classic Tic 
 
 ## 🖥️ Watch the Demo
 
-<video src="./Tic Tac Masterpiece.mp4" controls unmuted> </video>
+https://github.com/user-attachments/assets/31057961-e68f-48c7-b3d1-9933ca5557e5
+
 
 
 ## 📥 Download
@@ -83,7 +84,7 @@ Prefer the classic console-based experience? Check out the **Tic Tac Toe Masterp
 
 ## 📜 License
 
-This project is licensed under the [LICENSE](https://github.com/NaghamProgrammer/Tic-Tac-Toe-Masterpiece-With-GUI/blob/main/LICENSE). You are free to use, modify, and distribute this project.
+This project is licensed under the [LICENSE](https://github.com/Mohammed-3tef/Tic-Tac-Toe-Masterpiece-With-GUI/blob/main/LICENSE). You are free to use, modify, and distribute this project.
 
 
 ### **Enjoy the games! Have fun and let us know your thoughts!! 🎉🎲**
