@@ -31,7 +31,7 @@ Visit the release page to download the precompiled binaries for your system. Ext
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Mohammed-3tef/Tic-Tac-Toe-Masterpiece-With-GUI.git
+   git clone https://github.com/Mohammed-3tef/Tic_Tac_Masterpiece_GUI.git
    cd Tic_Tac_Toe_Masterpiece_With_GUI
    ```
 2. Open the project in **Qt Creator**.
