@@ -18,7 +18,7 @@ https://github.com/user-attachments/assets/31057961-e68f-48c7-b3d1-9933ca5557e5
 
 ## 📥 Download
 
-Get the latest version of **Tic Tac Toe Masterpiece with GUI**: [Download Here](https://github.com/Mohammed-3tef/Tic-Tac-Toe-Masterpiece-With-GUI/releases/latest) <br>
+Get the latest version of **Tic Tac Toe Masterpiece with GUI**: [Download Here](https://github.com/Mohammed-3tef/Tic_Tac_Masterpiece_GUI/releases/latest) <br>
 Visit the release page to download the precompiled binaries for your system. Extract the downloaded file and run the executable to start playing!
 
 
