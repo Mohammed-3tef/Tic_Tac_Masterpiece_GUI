@@ -1,4 +1,11 @@
-# Tic Tac Masterpiece With GUI 🎮
+<h1>
+  Tic Tac Masterpiece With GUI 🎮
+  <div > 
+    <a href="https://deepwiki.com/Mohammed-3tef/Tic_Tac_Masterpiece_GUI"> 
+      <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"> 
+    </a> 
+  </div>
+</h1> 
 
 A modern, interactive, and visually appealing implementation of the classic Tic Tac Toe game with a graphical user interface (GUI). Play against a friend or challenge a random computer player to test your strategy and decision-making skills!
 
